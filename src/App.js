@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Login from './pages/Forms/loginForm.js';
-import SignUp from './pages/Forms/signupForm.js';
-import EventDescription from './pages/Forms/EventDescription.js';
-import ContactDetails from './pages/Forms/contactDetails.js';
+import Login from './Forms/loginForm.js';
+import SignUp from './Forms/signupForm.js';
+import EventDescription from './Forms/EventDescription.js';
+import ContactDetails from './Forms/contactDetails.js';
 import SimpleMap from './map.js';
 function App() {
   return (
