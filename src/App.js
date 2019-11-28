@@ -13,7 +13,6 @@ function App() {
       <EventDescription/>
       <ContactDetails/>
       <SimpleMap/>
-
     </div>
   );
 }
