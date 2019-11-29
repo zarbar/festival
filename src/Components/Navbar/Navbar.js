@@ -3,12 +3,12 @@ import './Navbar.css';
 
 class Navbar extends React.Component {
 
-render() {
-    return (
-<>
-This is the Navbar Component
-</>
-    )
-}
+    render() {
+        return (
+            <>
+
+            </>
+        )
+    }
 }
 export default Navbar; 

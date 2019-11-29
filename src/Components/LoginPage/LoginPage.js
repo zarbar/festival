@@ -3,12 +3,12 @@ import './LoginPage.css';
 
 class LoginPage extends React.Component {
 
-render() {
-    return (
-<>
-This is the Login Page component
-</>
-    )
-}
+    render() {
+        return (
+            <>
+
+            </>
+        )
+    }
 }
 export default LoginPage; 
