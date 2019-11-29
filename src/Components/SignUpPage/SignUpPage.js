@@ -4,13 +4,13 @@ import FormPageBasicInfo from '../FormPageBasicInfo/FormPageBasicInfo.js';
 
 class SignUpPage extends React.Component {
 
-render() {
-    return (
-<>
-This is the SignUp page component 
-<FormPageBasicInfo />
-</>
-    )
-}
+    render() {
+        return (
+            <>
+
+                <FormPageBasicInfo />
+            </>
+        )
+    }
 }
 export default SignUpPage; 

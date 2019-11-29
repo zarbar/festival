@@ -3,12 +3,12 @@ import './FormPageBasicInfo.css';
 
 class FormPageBasicInfo extends React.Component {
 
-render() {
-    return (
-<>
-This is the FormPageBasicInfo component
-</>
-    )
-}
+    render() {
+        return (
+            <>
+
+            </>
+        )
+    }
 }
 export default FormPageBasicInfo; 
