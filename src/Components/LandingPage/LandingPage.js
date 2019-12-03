@@ -6,12 +6,11 @@ import logo from '../../images/Logos/yellowEnglebert.png';
 import logo1 from '../../images/Logos/purpleEnglebert.png';
 import AboutPage from '../AboutPage/AboutPage';
 
-class LandingPage extends React.Component {
 
+class LandingPage extends React.Component {
     render() {
         return (
             <>
-
                 <header className="app-header">
                     <span>Login</span>
                     <span><img src={logo} alt='logo' /></span>
@@ -48,7 +47,6 @@ class LandingPage extends React.Component {
                 <div className='footer-end'>
                     <p>KODIRI 2019</p>
                 </div>
-
 
                 <LoginPage />
                 <SignUpPage />

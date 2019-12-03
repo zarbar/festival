@@ -11,4 +11,5 @@ class FormPageBasicInfo extends React.Component {
         )
     }
 }
+
 export default FormPageBasicInfo; 
