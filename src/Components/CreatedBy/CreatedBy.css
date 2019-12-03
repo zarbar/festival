@@ -1,0 +1,41 @@
+.created-by {
+    background-color: #e6331c;
+    color: antiquewhite;
+    padding-bottom: .5em;
+}
+
+.created-by div img {
+    width: 100%;
+    height: auto;
+}
+
+.creators {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.creator {
+    padding: 30px;
+    text-align: center;
+    width: 80px;
+}
+
+.avatar {
+    width: 80px !important;
+    height: 80px !important;
+}
+
+@media screen and (max-width: 600px) {
+
+    .creator {
+        padding: 10px;
+    }
+
+    .avatar {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}

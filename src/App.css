@@ -63,30 +63,6 @@
   font-weight: 600;
 }
 
-.about {
-  background-color: #0170b7;
-  color: antiquewhite;
-  padding-top: .2em;
-  padding-bottom: 1em;
-}
-
-.about p,
-h1 {
-  padding-left: 1%;
-  padding-right: 1%;
-}
-
-.created-by {
-  background-color: #e6331c;
-  color: antiquewhite;
-  padding-bottom: .5em;
-}
-
-.created-by div img {
-  width: 100%;
-  height: auto;
-}
-
 footer {
   display: flex;
   background-color: #e6331c;
