@@ -9,7 +9,7 @@ export default function ContactDetails() {
             <label>Twitter Handle:</label><input type="text" required placeholder="@myfestival"></input>
             <label>Facebook Page:</label> <input type="text"required placeholder="Your Festival"></input>
             <label>Contact Email:</label><input type="text" required placeholder="contact@crazyfest.com"></input>
-            <label>Phone Number:</label><input type="text" placeholder="+44..."></input>
+            <label>Phone Number:</label><input type="text" placeholder="+44"></input>
         </form>
         <button className="item">Continue</button>
         </>

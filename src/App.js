@@ -29,8 +29,10 @@ class App extends Component {
             <Route exact path='/dashboard/:userId'>
               <Dashboard />
             </Route>
-            <Route exact path='/loggedInFalse'>
+            <Route exact path='/login'>
             <Login />
+            </Route>
+            <Route exact path='/signup'>
             <SignUp />
             </Route>
             <Route exact path='/loggedInTrue'>

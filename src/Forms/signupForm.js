@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './signupFormStyle.css'
+import './signupFormStyle.css' 
+import GoogleLoginButton from '../Zara_Google_Login/GoogleLoginButton.js'
 
 export default function SignUp() {
     let [name, setName] = useState('');
@@ -8,7 +9,7 @@ export default function SignUp() {
     }
     return (
         <>
-        <button>Login With Facebook</button>
+        
         {name}
         <form>
             <input type="text" placeholder="Festival name" required onChange={handleNameChange}></input>
@@ -17,9 +18,11 @@ export default function SignUp() {
             <input type="text" placeholder="Confirm assword" required></input>
         </form>
         <div className="container">
-        <button className="item">Login</button>
+        
         <button className="item">Create Account</button>
-        <p>CAPCHA GOES HERE</p>
+        <GoogleLoginButton text="Sign Up with Google"/>
+        <a href="/login"><button className="item">Already have an account?</button></a>
+ 
         </div>
         </>
     )
