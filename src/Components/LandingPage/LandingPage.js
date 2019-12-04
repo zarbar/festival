@@ -10,8 +10,6 @@ class LandingPage extends React.Component {
     render() {
         return (
             <>
-               
-
                 <main className="wrapper">
                     <div className='join-now'>
                         <p>FestiPal is the essential digital tool for creating bespoke, user-friendly web-apps.
@@ -19,14 +17,11 @@ class LandingPage extends React.Component {
                             Designed for festival organisers, from indie events to international parties.
             </p>
                         <br /><br />
-                        <button className='join'>Join now</button>
+                        <a href="/signup"><button className='join'>Join now</button></a>
                     </div>
                 </main>
 
                 < AboutPage />
-
-
-
                 <footer>
                     <div className='logo1'>
                         <img src={logo1} alt='logo1' />
@@ -42,9 +37,6 @@ class LandingPage extends React.Component {
                 <div className='footer-end'>
                     <p>KODIRI 2019</p>
                 </div>
-
-                <LoginPage />
-                <SignUpPage />
             </>
         )
     }
