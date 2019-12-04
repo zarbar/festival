@@ -25,7 +25,7 @@ export default function CreatedBy() {
                     <img src={concert} alt='concert logo' />
                 </div>
                 <br /><br />
-                <h1>Created by...</h1>
+                <h1>Created by:</h1>
                 <div className='creators'>
                     {creators.map(creator => {
                         return (
