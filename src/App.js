@@ -26,13 +26,19 @@ class App extends Component {
               <AboutPage />
               <ContactPage />
             </Route>
-            <Route exact path='/:dashboard'>
+            <Route exact path='/dashboard/:userId'>
               <Dashboard />
             </Route>
+            <Route exact path='/login'>
             <Login />
+            </Route>
+            <Route exact path='/signup'>
             <SignUp />
+            </Route>
+            <Route exact path='/loggedInTrue'>
             <EventDescription />
             <ContactDetails />
+            </Route>
             <SimpleMap />
           </Switch>
         </div>
