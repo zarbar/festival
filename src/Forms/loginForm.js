@@ -10,7 +10,7 @@ export default function Login() {
             <input type="text" placeholder="password"></input>
         </form>
         <div className="container">
-        <button className="item">Login</button>
+        <a href="/loggedInTrue"><button className="item">Login</button></a>
         <GoogleLoginButton text="Log In with Google"/>
         <em>Don't have an account yet?</em>
         <a href="/signup"><button className="item">Create New Account</button></a>

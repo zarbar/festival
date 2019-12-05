@@ -37,7 +37,9 @@ class App extends Component {
             </Route>
             <Route exact path='/loggedInTrue'>
             <EventDescription />
-            <ContactDetails />
+            </Route>
+            <Route exact path='/contactdetails'>
+              <ContactDetails/>
             </Route>
             <SimpleMap />
           </Switch>
