@@ -12,7 +12,7 @@ class LandingPage extends React.Component {
         return (
             <>
                 <header className="app-header">
-                    <span>Login</span>
+                    <a href="/login"><span>Login</span></a>
                     <span><img src={logo} alt='logo' /></span>
                     <span>Menu</span>
                 </header>
@@ -24,14 +24,11 @@ class LandingPage extends React.Component {
                             Designed for festival organisers, from indie events to international parties.
             </p>
                         <br /><br />
-                        <button className='join'>Join now</button>
+                        <a href="/signup"><button className='join'>Join now</button></a>
                     </div>
                 </main>
 
                 < AboutPage />
-
-
-
                 <footer>
                     <div className='logo1'>
                         <img src={logo1} alt='logo1' />
@@ -47,9 +44,6 @@ class LandingPage extends React.Component {
                 <div className='footer-end'>
                     <p>KODIRI 2019</p>
                 </div>
-
-                <LoginPage />
-                <SignUpPage />
             </>
         )
     }
