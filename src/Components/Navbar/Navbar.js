@@ -8,20 +8,20 @@ class Navbar extends React.Component {
         super();
         this.state = {
             menu: 'menuClosed',
-            navbarOpacity: 0.6,
+            opacity: 'opacityOn',
         };
     }
 
     toggleMenu() {
         this.state.menu === 'menuClosed' ?
-            this.setState({ menu: 'menuOpen' }) :
-            this.setState({ menu: 'menuClosed' })
+            this.setState({ menu: 'menuOpen', opacity: 'opacityOff' }) :
+            this.setState({ menu: 'menuClosed', opacity: 'opacityOn' });
     }
 
     render() {
         return (
             <>
-                <header className="app-header">
+                <header className="app-header" id={this.state.opacity}>
                     <span>Login</span>
                     <span><img src={logo} alt='logo' /></span>
                     <span><button id='burgerButton' onClick={() => this.toggleMenu()}><img id='burger' src={menu} alt='menu' /></button></span>

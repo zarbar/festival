@@ -1,10 +1,7 @@
 import React from 'react';
 import './LandingPage.css';
-import LoginPage from '../LoginPage/LoginPage';
-import SignUpPage from '../SignUpPage/SignUpPage.js';
 import logo1 from '../../images/Logos/purpleEnglebert.png';
 import AboutPage from '../AboutPage/AboutPage';
-
 
 class LandingPage extends React.Component {
     render() {
@@ -12,12 +9,17 @@ class LandingPage extends React.Component {
             <>
                 <main className="wrapper">
                     <div className='join-now'>
-                        <p>FestiPal is the essential digital tool for creating bespoke, user-friendly web-apps.
-            <br />
-                            Designed for festival organisers, from indie events to international parties.
-            </p>
-                        <br /><br />
-                        <a href="/signup"><button className='join'>Join now</button></a>
+                        FestiPal is the essential digital tool for creating bespoke, user-friendly web-apps.
+                        <br /> <br />
+
+                        Designed for festival organisers, from indie events to international parties.
+                        <br /> <br />
+
+                        <a href="/signup">
+                            <button className='join'>
+                                <h1>Join now</h1>
+                            </button>
+                        </a>
                     </div>
                 </main>
 
