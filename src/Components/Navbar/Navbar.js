@@ -22,8 +22,8 @@ class Navbar extends React.Component {
         return (
             <>
                 <header className="app-header" id={this.state.opacity}>
-                    <span>Login</span>
-                    <span><img src={logo} alt='logo' /></span>
+                    <span><a href='/login'>Login</a></span>
+                    <span><a href='/'><img src={logo} alt='logo' /></a></span>
                     <span><button id='burgerButton' onClick={() => this.toggleMenu()}><img id='burger' src={menu} alt='menu' /></button></span>
                 </header>
 

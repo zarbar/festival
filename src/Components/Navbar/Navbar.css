@@ -26,6 +26,12 @@
     padding: .5em;
 }
 
+.app-header span a {
+    text-decoration: none;
+    color: #FFCC03;
+}
+
+
 .app-header span img {
     width: 70%;
     height: auto;
@@ -68,7 +74,3 @@
     background: none;
     border: none;
 }
-
-
-/* font-family: 'Englebert', sans-serif;
-font-family: 'Dosis', sans-serif; */
