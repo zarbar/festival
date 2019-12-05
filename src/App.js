@@ -5,13 +5,12 @@ import Login from './Forms/loginForm.js';
 import SignUp from './Forms/signupForm.js';
 import EventDescription from './Forms/EventDescription.js';
 import ContactDetails from './Forms/contactDetails.js';
-// import SimpleMap from './map.js';
 import LandingPage from './Components/LandingPage/LandingPage.js';
 import AboutPage from './Components/AboutPage/AboutPage.js';
 import ContactPage from './Components/ContactPage/ContactPage.js';
 import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
-import Hogsozzle from './mumtahin2/Mumtahin2.js';
+import PreviewSite from './PreviewSite/PreviewSite';
 
 class App extends Component {
   render() {
@@ -45,10 +44,9 @@ class App extends Component {
               <EventDescription />
               <ContactDetails />
             </Route>
-            {/* <SimpleMap /> */}
+            <Route exact path='/PreviewSite'><PreviewSite/></Route>
           </Switch>
-          <Hogsozzle />
-
+          
         </div>
       </Router>
     );
