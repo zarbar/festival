@@ -10,6 +10,7 @@ import AboutPage from './Components/AboutPage/AboutPage.js';
 import ContactPage from './Components/ContactPage/ContactPage.js';
 import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
+import PreviewSite from './PreviewSite/PreviewSite';
 
 class App extends Component {
   render() {
@@ -41,7 +42,9 @@ class App extends Component {
             <Route exact path='/contactdetails'>
               <ContactDetails/>
             </Route>
+            <Route exact path='/PreviewSite'><PreviewSite/></Route>
           </Switch>
+          
         </div>
       </Router>
     );

@@ -1,0 +1,70 @@
+.hogsozzle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid red;
+}
+
+.first-image img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+}
+.buy-tickets {
+    background-color: black;
+    color: antiquewhite;
+    margin-top: -.3em;
+    padding-bottom: 25px;
+    font-size: 1.2em;
+}
+
+.buy-tickets .button {
+    background: #3eeaf5;
+    width: 20em;
+    height: 4em;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.guest-info img {
+    width: 100%;
+    height: auto;
+}
+.guest-info iframe {
+    width: 100%;
+    height: auto;
+}
+.connect, .subscribe {
+    color: antiquewhite;
+    background: black;
+}
+input {
+    width: 30%;
+    height: 2em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border-style: none;
+}
+.subscribe button {
+    background: #f5ac3e;
+    width: 7em;
+    height: 2em;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.subscribe .email a {
+    text-decoration: none;
+    color: #f5ac3e;
+}
+@media only screen and (max-width: 600px) {
+    input {
+      width: 60%;
+    }
+    .buy-tickets .button {
+        width: 10em;
+        height: 3em;
+    }
+  }
+
+
