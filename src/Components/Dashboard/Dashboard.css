@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    
+}
+
+.item {
+    flex: 1; 
+    color: black;
+    padding: 5%; 
+    font-size: 20px;  
+    border-radius: 10px;
+    align-self: center;  
+}
+
+a {
+    color: black;
+}
+
+.getting {
+    background-color: #e6331c;
+}
+
+.edit {
+    background-color: #0170b7;
+}
+
+.ticket {
+    background-color: #474d69; 
+}
+
+.contact {
+    background-color: #ffcc03;
+}
+
+.preview {
+    background-color: #e94c59;
+    font-size: 20px; 
+    margin: 15% 30% 15% 30%; 
+    border-radius: 5px; 
+}
