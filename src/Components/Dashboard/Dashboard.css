@@ -1,40 +1,77 @@
-.container {
+.dashboardPage {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
-.item {
-    flex: 1; 
-    color: black;
-    padding: 5%; 
-    font-size: 20px;  
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.aDashboard {
+    text-decoration: none;
+    color: #474d69;
+    font-weight: 600;
+}
+
+.dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    background: rgb(235, 232, 232);
     border-radius: 10px;
-    align-self: center;  
+    padding: 5%;
+    margin: 3%;
+    box-shadow: 2px 2px 3px grey;
 }
 
-a {
-    color: black;
+.itemDash {
+    font-size: 1.3em;
+    color: #474d69;
+    padding: 2%;
+    border-radius: 10px;
+    align-self: center;
+    font-family: dosis;
+    background: lightgray;
+    margin: 2%;
+    width: 30%;
+    box-shadow: 2px 2px 3px grey;
 }
 
-.getting {
-    background-color: #e6331c;
-}
-
-.edit {
-    background-color: #0170b7;
-}
-
-.ticket {
-    background-color: #474d69; 
-}
-
-.contact {
+.previewDash {
+    font-family: englebert;
+    color: #474d69;
     background-color: #ffcc03;
+    font-size: 2em;
+    border-radius: 5px;
+    margin-top: 5%;
+    box-shadow: 1px 1px 2px grey;
 }
 
-.preview {
-    background-color: #e94c59;
-    font-size: 20px; 
-    margin: 15% 30% 15% 30%; 
-    border-radius: 5px; 
+.previewDash:hover {
+    background-color: #474d69;
+    color: lightgray;
+}
+
+.dashboardIcon {
+    width: 80%;
+    height: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .itemDash {
+        width: 10%;
+    }
+
+    .buttonContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .dashboardIcon {
+        width: 70%;
+    }
 }
