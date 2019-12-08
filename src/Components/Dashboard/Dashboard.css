@@ -1,9 +1,12 @@
 .dashboardPage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height: 100vh;
+}
+
+#dashHeader {
+    font-family: englebert;
+    font-size: 2em;
+    margin-top: 15vh;
+    padding: 1%;
 }
 
 .buttonContainer {
@@ -22,10 +25,11 @@
     display: flex;
     flex-direction: column;
     background: rgb(235, 232, 232);
-    border-radius: 10px;
-    padding: 5%;
-    margin: 3%;
-    box-shadow: 2px 2px 3px grey;
+    height: 100vh;
+    padding: 2%;
+
+    /* margin: 2%; */
+    /* box-shadow: 2px 2px 3px grey; */
 }
 
 .itemDash {
@@ -36,7 +40,7 @@
     align-self: center;
     font-family: dosis;
     background: lightgray;
-    margin: 2%;
+    margin: 1%;
     width: 30%;
     box-shadow: 2px 2px 3px grey;
 }

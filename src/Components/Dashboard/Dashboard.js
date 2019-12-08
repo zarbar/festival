@@ -62,20 +62,18 @@ class Dashboard extends React.Component {
     render() {
         return (
             <>
-                <main className='dashboardPage'>
 
-                    <h1>Welcome UserName</h1>
-
-                    <div className='dashboardContainer'>
-                        <div className='buttonContainer'>
-                            {this.dashboardComponents()}
-                        </div>
-                        <a href='/PreviewSite' className='aDashboard'>
-                            <button className='previewDash'>Preview my site
-                            </button>
-                        </a>
+                <div className='dashboardContainer'>
+                    <span id="dashHeader">Welcome UserName</span>
+                    <div className='buttonContainer'>
+                        {this.dashboardComponents()}
                     </div>
-                </main>
+                    <a href='/PreviewSite' className='aDashboard'>
+                        <button className='previewDash'>Preview my site
+                            </button>
+                    </a>
+                </div>
+
             </>
         );
     }

@@ -5,10 +5,10 @@
     justify-content: space-around;
     background-color: rgb(0, 0, 0);
     width: 100vw;
-    max-height: 6em;
-    min-height: 3.5em;
+    height: 15vh;
     position: fixed;
     z-index: 2;
+    margin-top: 0;
 }
 
 #opacityOn {

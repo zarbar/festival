@@ -29,6 +29,7 @@ class App extends Component {
               <ContactPage />
             </Route>
             <Route exact path='/dashboard/:userId'>
+              <Navbar />
               <Dashboard />
             </Route>
             <Route exact path='/login'>
