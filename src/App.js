@@ -12,6 +12,7 @@ import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
 import PreviewSite from './PreviewSite/PreviewSite';
 
+
 class App extends Component {
   render() {
     return (
@@ -28,23 +29,24 @@ class App extends Component {
               <ContactPage />
             </Route>
             <Route exact path='/dashboard/:userId'>
+              <Navbar />
               <Dashboard />
             </Route>
             <Route exact path='/login'>
-            <Login />
+              <Login />
             </Route>
             <Route exact path='/signup'>
-            <SignUp />
+              <SignUp />
             </Route>
             <Route exact path='/loggedInTrue'>
-            <EventDescription />
+              <EventDescription />
             </Route>
             <Route exact path='/contactdetails'>
-              <ContactDetails/>
+              <ContactDetails />
             </Route>
-            <Route exact path='/PreviewSite'><PreviewSite/></Route>
+            <Route exact path='/PreviewSite'><PreviewSite /></Route>
           </Switch>
-          
+
         </div>
       </Router>
     );
