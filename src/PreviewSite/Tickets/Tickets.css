@@ -1,0 +1,16 @@
+.buy-tickets {
+    background-color: black;
+    color: antiquewhite;
+    margin-top: -.3em;
+    padding-bottom: 25px;
+    font-size: 1.2em;
+}
+
+.buy-tickets .button {
+    background: #3eeaf5;
+    width: 20em;
+    height: 4em;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}

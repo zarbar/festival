@@ -1,0 +1,12 @@
+.hogsozzle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid red;
+}
+
+.first-image img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 0;
+}
