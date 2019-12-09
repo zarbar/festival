@@ -1,8 +1,5 @@
 import React from 'react';
 import './LandingPage.css';
-import LoginPage from '../LoginPage/LoginPage';
-import SignUpPage from '../SignUpPage/SignUpPage.js';
-import logo from '../../images/Logos/yellowEnglebert.png';
 import logo1 from '../../images/Logos/purpleEnglebert.png';
 import AboutPage from '../AboutPage/AboutPage';
 
@@ -11,24 +8,22 @@ class LandingPage extends React.Component {
     render() {
         return (
             <>
-                <header className="app-header">
-                    <a href="/login"><span>Login</span></a>
-                    <span><img src={logo} alt='logo' /></span>
-                    <span>Menu</span>
-                </header>
-
                 <main className="wrapper">
                     <div className='join-now'>
-                        <p>FestiPal is the essential digital tool for creating bespoke, user-friendly web-apps.
-            <br />
-                            Designed for festival organisers, from indie events to international parties.
-            </p>
-                        <br /><br />
-                        <a href="/signup"><button className='join'>Join now</button></a>
+                        FestiPal is the essential digital tool for creating bespoke, user-friendly web-apps.
+                        <br /> <br />
+                        Designed for festival organisers, from indie events to international parties.
+                        <br /> <br />
+                        <a href="/signup">
+                            <button className='join'>
+                                <h1>Join now</h1>
+                            </button>
+                        </a>
                     </div>
                 </main>
-
+          
                 < AboutPage />
+
                 <footer>
                     <div className='logo1'>
                         <img src={logo1} alt='logo1' />
@@ -44,8 +39,10 @@ class LandingPage extends React.Component {
                 <div className='footer-end'>
                     <p>KODIRI 2019</p>
                 </div>
+
             </>
         )
     }
 }
-export default LandingPage; 
+export default LandingPage;
+

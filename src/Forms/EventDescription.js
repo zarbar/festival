@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 import './eventdes.css'
 
 export default function EventDescription() {
+    // function handleChange(e) {
+    //     console.log(new Date(e.target.value));
+    //     console.log(new Date('04-12-2019'))
+    //  if (new Date(e.target.value) < new Date('04-12-2019')) {
+    //      alert('date must be in the future!')
+    //  }      
+      
     let [submit, setSubmit] = useState('')
     function handleSubmit() {
         setSubmit('Splendid, thank you!')

@@ -1,0 +1,13 @@
+
+.about {
+    background-color: #0170b7;
+    color: antiquewhite;
+    padding-top: .2em;
+    padding-bottom: 1em;
+  }
+  
+  .about p,
+  h1 {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
