@@ -1,0 +1,23 @@
+.connect, .subscribe {
+    color: antiquewhite;
+    background: black;
+}
+input {
+    width: 30%;
+    height: 2em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border-style: none;
+}
+.subscribe button {
+    background: #f5ac3e;
+    width: 7em;
+    height: 2em;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.subscribe .email a {
+    text-decoration: none;
+    color: #f5ac3e;
+}
