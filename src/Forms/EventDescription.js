@@ -17,6 +17,8 @@ export default function EventDescription() {
         <label>Start Time:</label><input type="time"/>
         <label>End Date:</label><input type="date"/>
         <label>End Time:</label><input type="time"/>
+        <label>Precise Location: </label>
+        <label>Approx Location: </label>
         </form>
         <a href="/contactdetails"><button className="item" onClick={handleSubmit}>Continue</button></a><br></br>
         {submit}
