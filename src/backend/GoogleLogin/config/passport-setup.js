@@ -3,7 +3,17 @@ const GoogleStrategy = require('passport-google-oauth20');
 const keys = require('./keys');
 const User = require('../../models/userModel');
 
+//mongodb userID takes identifying info and sends to browser
+passport.serializeUser((user, done) => {
+    done(null, user.id);
+});
 
+//deserialize takes id when browser sends cookie back - passes in user
+passport.deserializeUser((id, done) => {
+    User.findById(id).then((user) => {
+        done(null, user);
+    })
+});
 
 passport.use(
     new GoogleStrategy({
@@ -11,23 +21,20 @@ passport.use(
         clientID: keys.google.clientID,
         clientSecret: keys.google.clientSecret,
     }, (accessToken, refreshToken, profile, done) => {
-        console.log('profile.displayName: ', profile.displayName, 'profile.id: ', profile.id);
-        new User({
-            username: profile.displayName,
-            googleId: profile.id
-        }).save().then((newUser) => {
-            console.log('new User Created in database');
+        User.findOne({ googleId: profile.id }).then((currentUser) => {
+            if (currentUser) {
+                // already have user
+                console.log('user is: ', currentUser);
+                done(null, currentUser);
+            } else {
+                //if not, create new user in db
+                new User({
+                    username: profile.displayName,
+                    googleId: profile.id
+                }).save().then((newUser) => {
+                    console.log('new User Created in database');
+                    done(null, newUser);
+                })
+            }
         })
     }))
-
-
-
-    // console.log('google login connected, profile: ', JSON.stringify(profile.id), JSON.stringify(profile.displayName));
-
-        // User.findOne({ googleId: profile.id }).then((currentUser) => {
-        //     console.log('google profile found');
-        //     if (currentUser) {
-        //         //already have user
-        //         console.log('user is' + currentUser)
-        //     } else {
-        //if not, create new user in db

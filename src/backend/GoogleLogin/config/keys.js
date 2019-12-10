@@ -10,6 +10,9 @@ module.exports = {
         useNewUrlParser: true,
         useUnifiedTopology: true
 
+    },
+    session: {
+        cookieKey: 'festipalismyfriend'
     }
 }
 
