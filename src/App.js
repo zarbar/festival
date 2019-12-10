@@ -11,6 +11,8 @@ import ContactPage from './Components/ContactPage/ContactPage.js';
 import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
 import PreviewSite from './PreviewSite/PreviewSite';
+import FakeLogin from './backend/GoogleLogin/FakeLoginPage';
+import GoogleLogin from './backend/GoogleLogin/Login';
 
 
 class App extends Component {
@@ -45,8 +47,13 @@ class App extends Component {
               <ContactDetails />
             </Route>
             <Route exact path='/PreviewSite'><PreviewSite /></Route>
+            <Route exact path='/templogin'>
+              <FakeLogin />
+            </Route>
+            {/* <Route exact path='/auth/google'>
+              <GoogleLogin />
+            </Route> */}
           </Switch>
-
         </div>
       </Router>
     );

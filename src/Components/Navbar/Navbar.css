@@ -45,9 +45,9 @@
 
 .menu {
     font-family: 'Englebert';
-    margin-top: 6em;
+    margin-top: 15vh;
     width: 100vw;
-    height: 90vh;
+    height: 85vh;
     background: #FFCC03;
     display: flex;
     position: fixed;
