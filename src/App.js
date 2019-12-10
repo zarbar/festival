@@ -12,6 +12,7 @@ import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
 import PreviewSite from './PreviewSite/PreviewSite';
 
+
 class App extends Component {
   render() {
     return (
@@ -32,21 +33,20 @@ class App extends Component {
               <Dashboard />
             </Route>
             <Route exact path='/login'>
-              <Navbar />
               <Login />
             </Route>
             <Route exact path='/signup'>
-              <Navbar />
               <SignUp />
             </Route>
             <Route exact path='/loggedInTrue'>
-              <Navbar />
               <EventDescription />
+            </Route>
+            <Route exact path='/contactdetails'>
               <ContactDetails />
             </Route>
-            <Route exact path='/PreviewSite'><PreviewSite/></Route>
+            <Route exact path='/PreviewSite'><PreviewSite /></Route>
           </Switch>
-          
+
         </div>
       </Router>
     );
