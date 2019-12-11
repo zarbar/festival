@@ -1,0 +1,20 @@
+input {
+    border: 1px solid red; 
+    border-radius: 3px;
+    margin: 5px; 
+    width: 250px;
+    height: 20px;
+}
+
+
+
+#or {
+    border-bottom: 1px solid red;
+    line-height: 0.1em; 
+    margin: 20px 30% 20px 30%; 
+}
+
+p span {
+    background: white; 
+    padding: 0 10px; 
+}
