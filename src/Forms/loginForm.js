@@ -11,7 +11,7 @@ export default function Login() {
         </form>
         <div className="container">
         <a href="/loggedInTrue"><button className="item">Login</button></a>
-        <GoogleLoginButton text="Log In with Google"/>
+            <GoogleLoginButton text="Log In with Google"/>
         <em>Don't have an account yet?</em>
         <a href="/signup"><button className="item">Create New Account</button></a>
         
