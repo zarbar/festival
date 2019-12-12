@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './signupFormStyle.css'
-import GoogleLoginButton from '../backend/GoogleLogin/GoogleLoginButton';
+import GoogleLoginButton from '../Components/GoogleLogin/GoogleLoginButton';
 
 export default function SignUp() {
     let [name, setName] = useState('');

@@ -12,7 +12,7 @@ import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
 import PreviewSite from './PreviewSite/PreviewSite';
 import FakeLogin from './backend/GoogleLogin/FakeLoginPage';
-import GoogleLogin from './backend/GoogleLogin/Login';
+import DbData from './Components/DbData/DbData';
 
 
 class App extends Component {
@@ -50,9 +50,9 @@ class App extends Component {
             <Route exact path='/templogin'>
               <FakeLogin />
             </Route>
-            {/* <Route exact path='/auth/google'>
-              <GoogleLogin />
-            </Route> */}
+            <Route exact path='/db'>
+              <DbData />
+            </Route>
           </Switch>
         </div>
       </Router>

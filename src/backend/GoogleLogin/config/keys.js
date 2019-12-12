@@ -6,7 +6,7 @@ module.exports = {
         clientSecret: 'GlJQeb6Sp64QVJDSkMFVXKZb'
     },
     mongodb: {
-        dbURI: 'mongodb+srv://user1:tu8ze5dHWyL7gSKW@cluster0-fzpo8.mongodb.net/test',
+        dbURI: 'mongodb+srv://user1:tu8ze5dHWyL7gSKW@cluster0-fzpo8.mongodb.net/Users',
         useNewUrlParser: true,
         useUnifiedTopology: true
 

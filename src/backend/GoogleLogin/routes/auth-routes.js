@@ -19,8 +19,7 @@ router.get('/google', passport.authenticate('google', {
 
 //redirect route
 router.get('/google/redirect', passport.authenticate('google'), (req, res) => {
-    // res.send(req.user)
-    res.redirect('/profile/')
+    res.render('/dashboard', req.user);
 })
 
 module.exports = router;

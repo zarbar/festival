@@ -10,8 +10,10 @@ const authCheck = (req, res, next) => {
     }
 }
 
-router.get('/', authCheck, (req, res) => {
-    res.redirect('/dashboard/' + req.user.id);
+
+
+router.get('/:userId', authCheck, (req, res) => {
+    res.send(req.body);
 })
 
 module.exports = router;
