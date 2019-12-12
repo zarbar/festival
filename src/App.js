@@ -11,6 +11,7 @@ import ContactPage from './Components/ContactPage/ContactPage.js';
 import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
 import PreviewSite from './PreviewSite/PreviewSite';
+import TicketInfo from './TicketInfo/TicketInfo';
 
 
 class App extends Component {
@@ -46,6 +47,7 @@ class App extends Component {
             </Route>
             <Route exact path='/PreviewSite'><PreviewSite /></Route>
           </Switch>
+          <TicketInfo />
 
         </div>
       </Router>
