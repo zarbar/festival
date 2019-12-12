@@ -24,7 +24,7 @@ export default class PreviewSite extends React.Component {
            <Location/>
            <Faq/>
            <Connect/>
-           </div>
+        </div>
         </>
         );
     }
