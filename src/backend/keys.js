@@ -15,9 +15,3 @@ module.exports = {
         cookieKey: 'festipalismyfriend'
     }
 }
-
-//mongodb+srv://user1:<password>@cluster0-fzpo8.mongodb.net/test
-//password:
-//tu8ze5dHWyL7gSKW
-
-//dbURI: 'mongodb+srv://mongodb+srv://user1:tu8ze5dHWyL7gSKW@cluster0-fzpo8.mongodb.net/test?retryWrites=true&w=majority@cluster0-fzpo8.mongodb.net/test'

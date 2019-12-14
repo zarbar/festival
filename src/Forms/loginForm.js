@@ -1,6 +1,6 @@
 import React from 'react';
 import './loginFormStyle.css';
-import GoogleLoginButton from '../backend/GoogleLogin/GoogleLoginButton';
+import GoogleLoginButton from '../Components/GoogleLogin/GoogleLoginButton';
 
 export default function Login() {
     return (

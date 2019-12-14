@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start-all": "npm-run-all -p back start",
-    "back": "nodemon src/backend/GoogleLogin/server.js ",
+    "back": "nodemon src/backend/server.js ",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

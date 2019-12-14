@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express('./routes/auth-routes');
-const db = require('../dbconnect');
+const db = require('./dbconnect');
 const port = process.env.PORT || 3002;
 
 

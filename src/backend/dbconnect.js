@@ -1,4 +1,4 @@
-const keys = require('./GoogleLogin/config/keys');
+const keys = require('./keys');
 
 const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config();
