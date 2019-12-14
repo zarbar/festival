@@ -6,7 +6,8 @@ export default function GoogleLoginButton(props) {
 
     const responseGoogle = (response) => {
         let user = {
-            googleId: response.w3.Eea
+            googleId: response.w3.Eea,
+            username: response.w3.ig
         }
         console.log(user);
         axios.post('/checkuser', user)
