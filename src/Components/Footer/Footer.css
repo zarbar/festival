@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    background-color: #e6331c;
+    align-items: center;
+    justify-content: space-between;
+    color: #474D69;
+    padding: .2em;
+}
+
+footer .logo1 img {
+    max-width: 7em;
+    min-width: 4em;
+    height: auto;
+}
+
+footer .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .footer-nav p {
+    padding: .4em;
+}
+
+.footer-end {
+    width: 100%;
+    background: #474D69;
+    padding-bottom: .2em;
+    padding-top: .2em;
+}
+
+.footer-end p {
+    color: antiquewhite;
+}
