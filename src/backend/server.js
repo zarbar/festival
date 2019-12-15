@@ -27,7 +27,7 @@ db.connect().then(dbo => {
                     dbo.collection('festipalusers').insertOne(newUser, function (err, res) {
                         if (err) throw err;
                         console.log("1 document inserted");
-                    }).then(() => res.redirect('/dashboard'))
+                    })
                 }
             }
             )
