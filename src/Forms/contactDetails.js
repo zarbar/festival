@@ -11,7 +11,7 @@ export default function ContactDetails() {
             <label>Contact Email:</label><input type="text" required placeholder="contact@crazyfest.com"></input>
             <label>Phone Number:</label><input type="text" placeholder="+44"></input>
         </form>
-        <button className="item">Continue</button>
+        <a href="/dashboard/:userId"><button className="item">Continue</button></a>
         </>
     )
 }

@@ -11,16 +11,20 @@ export default function SignUp() {
         <>
 
             {name}
+            <br />
+            <GoogleLoginButton text="Sign Up with Google" />
+            <p id="or"><span>or</span></p>
+            <p>sign up with your email address</p>
             <form>
                 <input type="text" placeholder="Festival name" required onChange={handleNameChange}></input>
                 <input type="text" placeholder="Email" required></input>
                 <input type="text" placeholder="Password" required></input>
-                <input type="text" placeholder="Confirm assword" required></input>
+                <input type="text" placeholder="Confirm Password" required></input>
             </form>
             <div className="container">
 
                 <button className="item">Create Account</button>
-                <GoogleLoginButton text="Sign Up with Google" />
+                
                 <a href="/login"><button className="item">Already have an account?</button></a>
 
             </div>
