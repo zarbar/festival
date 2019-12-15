@@ -11,6 +11,7 @@ import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
 import PreviewSite from './PreviewSite/PreviewSite';
 import FaqForm from './Components/Forms/FaqForm/FaqForm';
+import TicketInfo from './TicketInfo/TicketInfo';
 
 
 class App extends Component {
@@ -56,8 +57,13 @@ class App extends Component {
             <Route exact path='/faqForm'>
               <FaqForm />
             </Route>
+            {/* Ticket Info form */}
+            <Route exact path='/ticketInfoForm'>
+              <TicketInfo />
+            </Route>
             {/* Preview Site */}
-            <Route exact path='/PreviewSite'><PreviewSite /></Route>
+            <Route exact path='/PreviewSite'><PreviewSite />
+            </Route>
           </Switch>
         </div>
       </Router>
