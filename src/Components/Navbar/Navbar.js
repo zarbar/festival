@@ -21,14 +21,14 @@ class Navbar extends React.Component {
     render() {
         return (
             <>
-                <header className="app-header" id={this.state.opacity}>
+                <div className="navbarBody" id={this.state.opacity}>
                     <span><a href='/login'>Login</a></span>
                     <span><a href='/'><img src={logo} alt='logo' /></a></span>
                     <span><button id='burgerButton' onClick={() => this.toggleMenu()}><img id='burger' src={menu} alt='menu' /></button></span>
-                </header>
+                </div>
 
                 <div className={this.state.menu} >
-                    <div className='menu' id='menuShow'>
+                    <div className='navMenu' id='menuShow'>
                         <a className="menuItem topItem" href="/signup" onClick={() => { this.toggleMenu() }}>Sign up</a>
                         <a className="menuItem" href="/login" onClick={() => { this.toggleMenu() }}>Login</a>
                         <a className="menuItem" href="/about" onClick={() => { this.toggleMenu() }}>About</a>
