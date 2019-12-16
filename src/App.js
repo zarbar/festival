@@ -10,6 +10,7 @@ import AboutPage from './Components/AboutPage/AboutPage.js';
 import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
 import PreviewSite from './PreviewSite/PreviewSite';
+import DbData from './Components/DbData/DbData';
 import FaqForm from './Components/Forms/FaqForm/FaqForm';
 import TicketInfo from './TicketInfo/TicketInfo';
 
@@ -62,7 +63,12 @@ class App extends Component {
               <TicketInfo />
             </Route>
             {/* Preview Site */}
-            <Route exact path='/PreviewSite'><PreviewSite />
+            <Route exact path='/PreviewSite'>
+              <PreviewSite />
+            </Route>
+            {/* test route to retrieve database */}
+            <Route exact path='/db'>
+              <DbData />
             </Route>
           </Switch>
         </div>
