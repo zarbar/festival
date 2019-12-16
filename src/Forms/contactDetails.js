@@ -16,7 +16,7 @@ export default function ContactDetails() {
             <label>Contact Email:</label><input type="text" required placeholder="contact@crazyfest.com" value=""></input>
             <label>Phone Number:</label><input type="text" placeholder="+4412345 67890" value=""></input>
         </form>
-        <a href="/dashboard/:userId"><button className="item" onClick={setTwitter()}>Continue</button></a>
+        <a href="/dashboard/:userId"><button className="item">Continue</button></a>
         </>
     )
 }
