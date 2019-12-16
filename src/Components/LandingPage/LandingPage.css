@@ -1,0 +1,39 @@
+a:hover {
+    cursor: pointer;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../images/background.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.wrapper .join-now {
+    margin-top: 20vh;
+    width: 60%;
+    background-color: rgb(0, 0, 0, 0.65);
+    border-radius: 10px;
+}
+
+.wrapper .join-now .join {
+    border: 3px solid #0170b7;
+    background-color: #FFCC03;
+    opacity: 1;
+    color: black;
+    width: 100%;
+    bottom: 5%;
+    border-radius: 10px;
+}
+
+.wrapper .join-now {
+    font-family: dosis, sans-serif;
+    font-size: 1.5em;
+    color: antiquewhite;
+    padding: .5em;
+    font-weight: 600;
+    text-shadow: 0 0 3px black;
+}
