@@ -6,6 +6,7 @@ export default function SignUp() {
     let [name, setName] = useState('');
     function handleNameChange(e) {
         setName(<h3>Your festival {e.target.value} is just a few clicks away, let's get this party started!</h3>)
+        localStorage.setItem('Festival Name', e.target.value);
     }
     return (
         <>
@@ -15,7 +16,7 @@ export default function SignUp() {
             <input type="text" placeholder="Festival name" required onChange={handleNameChange}></input>
             <input type="text" placeholder="Email" required></input>
             <input type="text" placeholder="Password" required></input>
-            <input type="text" placeholder="Confirm assword" required></input>
+            <input type="text" placeholder="Confirm Password" required></input>
         </form>
         <div className="container">
         
