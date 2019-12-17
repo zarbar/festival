@@ -14,7 +14,6 @@ import DbData from './Components/DbData/DbData';
 import FaqForm from './Components/Forms/FaqForm/FaqForm';
 import TicketInfo from './Components/Forms/TicketInfo/TicketInfo';
 
-
 class App extends Component {
   render() {
     return (
