@@ -7,30 +7,37 @@
     padding: 0;
     margin-bottom: 2%;
 }
-form {
+
+#ticketInfoForm {
     width: 60%;
     height: auto;
     border-radius: 10px;
 }
-textarea {
+
+.ticketInfotextarea {
     width: 30%;
     height: 10%;
     border-radius: 10px;
     border: 2px solid rgb(218, 65, 96);
+    font-family: dosis;
 }
+
 .slide-photo {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 5px;
 }
+
 .slide-photo img {
     width: 100%;
     height: 270px;
     border-radius: 10px;
 }
+
 .img-item {
     position: relative;
 }
+
 .img-item .box {
     position: absolute;
     right: 0;
@@ -45,12 +52,14 @@ textarea {
         display: grid;
         grid-template-columns: auto;
     }
-    form {
+
+    #ticketInfoForm {
         width: 80%;
     }
-    textarea {
+
+    .ticketInfotextarea {
         width: 75%;
         height: 20%;
         border: 3px solid rgb(218, 65, 96);
     }
-  }
+}

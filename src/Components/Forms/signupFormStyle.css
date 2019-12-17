@@ -1,3 +1,8 @@
+#signUpPageContent {
+    padding-top: 15vh;
+    text-align: center;
+}
+
 input {
     border: 1px solid red;
     border-radius: 3px;
@@ -16,3 +21,5 @@ p span {
     background: white;
     padding: 0 10px;
 }
+
+#loginForm {}

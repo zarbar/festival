@@ -1,8 +1,9 @@
-form {
+#eventDescriptionForm {
     padding: 1em;
 }
 
-textarea {
-    width: 50vw;
-    height: 25vh;
+.eventDescriptiontextarea {
+    font-family: dosis;
+    width: 100%;
+    height: 20vh;
 }
