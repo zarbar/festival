@@ -10,11 +10,11 @@ import zara from './avatars/zara.png';
 export default function CreatedBy() {
 
     const creators = [
-        { name: 'Cameron Blackwood', url: '', avatar: cam },
-        { name: 'Christopher Lynch', url: '', avatar: chris },
-        { name: 'Clarissa Waldron', url: '', avatar: clarissa },
-        { name: 'Mumtahin Zubayer Zihan', url: '', avatar: mum },
-        { name: 'Zara Kletz', url: 'https://portfolio.zarakletz.now.sh/', avatar: zara }
+        { name: 'Cameron Blackwood', url: 'https://github.com/Reikon95', avatar: cam },
+        { name: 'Christopher Lynch', url: 'https://github.com/ChristopherLynch31', avatar: chris },
+        { name: 'Clarissa Waldron', url: 'https://github.com/ClarissaWaldron', avatar: clarissa },
+        { name: 'Mumtahin Zubayer Zihan', url: 'https://github.com/Mumtahinzihan', avatar: mum },
+        { name: 'Zara Kletz', url: 'https://zarakletz.rocks/', avatar: zara }
     ];
 
 

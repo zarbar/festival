@@ -22,9 +22,14 @@ class Navbar extends React.Component {
         return (
             <>
                 <div className="navbarBody" id={this.state.opacity}>
-                    <span><a href='/login'>Login</a></span>
-                    <span><a href='/'><img src={logo} alt='logo' /></a></span>
-                    <span><button id='burgerButton' onClick={() => this.toggleMenu()}><img id='burger' src={menu} alt='menu' /></button></span>
+                    <span className='navbarItem'><a href='/login'>Login</a></span>
+                    <span className='navbarItem'>
+                        <a href='/'><img src={logo} alt='logo' /></a>
+                    </span>
+                    <span className='navbarItem'>
+                        <button id='burgerButton' onClick={() => this.toggleMenu()}><img id='burger' src={menu} alt='menu' />
+                        </button>
+                    </span>
                 </div>
 
                 <div className={this.state.menu} >
