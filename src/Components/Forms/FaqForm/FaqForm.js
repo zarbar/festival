@@ -1,6 +1,7 @@
 import React from 'react';
 import './FaqForm.css';
 import './generalFormStyle.css'
+
 import faq1 from '../../../images/faqImages/faq1.jpg'
 import faq2 from '../../../images/faqImages/faq2.jpg'
 import faq3 from '../../../images/faqImages/faq3.jpg'
@@ -14,6 +15,7 @@ export default class FaqBackend extends React.Component {
 
     appendInput(e) {
         e.preventDefault()
+
         this.setState({ inputs: [...this.state.inputs, this.state.inputs.length + 1] },
             () => console.log(this.state)
         )
@@ -21,6 +23,7 @@ export default class FaqBackend extends React.Component {
 
     decreaseInput(e) {
         e.preventDefault()
+
         if (this.state.inputs.length > 0) {
             this.state.inputs.pop();
             this.setState(() => ({ inputs: this.state.inputs }));
@@ -29,6 +32,7 @@ export default class FaqBackend extends React.Component {
 
     render() {
         return (
+
             <div className='FaqsFormPage'>
 
                 <h1>FAQs</h1>
