@@ -10,10 +10,10 @@ import AboutPage from './Components/AboutPage/AboutPage.js';
 import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
 import PreviewSite from './PreviewSite/PreviewSite';
-
 import DbData from './Components/DbData/DbData';
 import FaqForm from './Components/Forms/FaqForm/FaqForm';
-import TicketInfo from './Components/Forms/TicketInfo/TicketInfo'; 
+import TicketInfo from './Components/Forms/TicketInfo/TicketInfo';
+import LocationForm from './Components/Forms/Location/Location';
 
 
 class App extends Component {
@@ -24,9 +24,8 @@ class App extends Component {
           <Switch>
             {/* Landing Page */}
             <Route exact path='/'>
-              {/* <Navbar /> */}
-              <FaqForm/>
-              {/* <LandingPage /> */}
+              <Navbar />
+              <LandingPage />
             </Route>
             {/* About page */}
             <Route exact path='/about'>
@@ -52,6 +51,10 @@ class App extends Component {
             <Route exact path='/basicInfo'>
               <BasicInfo />
             </Route>
+            {/* Location form */}
+            <Route exact path='/location'>
+              <LocationForm />
+            </Route>
             {/* event contact form */}
             <Route exact path='/contactForm'>
               <ConnectWithUs />
@@ -74,7 +77,7 @@ class App extends Component {
             </Route>
           </Switch>
         </div>
-      </Router>
+      </Router >
     );
   }
 }

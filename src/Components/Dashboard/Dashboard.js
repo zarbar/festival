@@ -14,7 +14,7 @@ let dashboardItems = [
         icon: location,
     }, {
         id: 'info',
-        link: '/eventDetailsForm',
+        link: '/basicInfo',
         title: 'Basic Info',
         icon: info,
     },

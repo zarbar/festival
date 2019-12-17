@@ -5,10 +5,6 @@ import faq1 from '../../../images/faqImages/faq1.jpg'
 import faq2 from '../../../images/faqImages/faq2.jpg'
 import faq3 from '../../../images/faqImages/faq3.jpg'
 
-import faq1 from '../../../images/faqImages/faq1.jpg'
-import faq2 from '../../../images/faqImages/faq2.jpg'
-import faq3 from '../../../images/faqImages/faq3.jpg'
-
 
 export default class FaqBackend extends React.Component {
     constructor(props) {
@@ -83,12 +79,12 @@ export default class FaqBackend extends React.Component {
                         </div>
                     </div>
                     <div className="containerFaq">
-                <button className="item">Save</button>
-                <button className="item">Preview</button>
-                <button className="item">Next</button>
-            </div>
+                        <button className="item">Save</button>
+                        <button className="item">Preview</button>
+                        <button className="item">Next</button>
+                    </div>
                 </form>
-              
+
             </div>
         );
 
