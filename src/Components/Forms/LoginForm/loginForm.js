@@ -2,7 +2,7 @@ import React from 'react';
 import './loginFormStyle.css';
 import GoogleLoginButton from '../../GoogleLogin/GoogleLoginButton';
 
-export default function Login() {
+export default function LoginForm() {
     return (
         <>
         <br />

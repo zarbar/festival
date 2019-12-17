@@ -14,9 +14,14 @@
     border-radius: 10px;
 }
 
-.ticketInfotextarea {
-    width: 30%;
-    height: 10%;
+.containerTicketInfo{
+    display: flex;
+    flex-direction: row;
+}
+
+.infoTextArea {
+    width: 60%;
+    height: 40%;
     border-radius: 10px;
     border: 2px solid rgb(218, 65, 96);
     font-family: dosis;

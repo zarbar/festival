@@ -11,11 +11,11 @@ export default function TicketInfo() {
       <h1>Ticket info</h1>
       <form action="" id='ticketInfoForm'>
         <p>Add a ticket description</p>
-        <textarea className="ticketInfotextarea" type='text' placeholder='Ticket description'></textarea>
+        <textarea className="infoTextArea" type='text' placeholder='Ticket description'></textarea>
         <p>Enter a link to your ticket provider</p>
-        <textarea className="ticketInfotextarea" type='text' placeholder='Link of your ticket'></textarea>
+        <textarea className="infoTextArea" type='text' placeholder='Link of your ticket'></textarea>
         <p>Text for ticket button</p>
-        <textarea className="ticketInfotextarea" type='text' placeholder='Name your call to action'></textarea>
+        <textarea className="infoTextArea" type='text' placeholder='Name your call to action'></textarea>
         <p>Select your display image:</p>
         <div className='slide-photo'>
           <div className='img-item'>
@@ -31,8 +31,17 @@ export default function TicketInfo() {
             <input className='box' type="checkbox" name='music' value="music" />
           </div>
         </div>
+        <div className="containerTicketInfo">
+                <button className="item">Save</button>
+                <button className="item">Preview</button>
+                <button className="item">Next</button>
+            </div>
       </form>
+
 
     </div>
   )
+
+
+
 }

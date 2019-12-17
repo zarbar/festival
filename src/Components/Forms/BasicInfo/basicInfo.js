@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './eventdes.css'
+import './basicInfo.css'
 
 export default function EventDescription() {    
       
@@ -19,9 +19,16 @@ export default function EventDescription() {
         <label>Location: </label><input type="string" placeholder="Sofia, Bulgaria"/>
         <label>Enter a short blurb about your festival: </label>
         <textarea className="eventDescriptiontextarea" placeholder="Hogsozzle is a perfoming arts and music festival known for its hog rost"></textarea>
+        <div className="containerBasicInfo">
+                <button onClick={handleSubmit} className="item">Save</button>
+                <button onClick={handleSubmit} className="item">Preview</button>
+                <button onClick={handleSubmit} className="item">Next</button>
+            </div>
+            {submit}
         </form>
-        <a href="/contactdetails"><button className="item" onClick={handleSubmit}>Continue</button></a><br></br>
-        {submit}
+        {/* <a href="/contactdetails"><button className="item" onClick={handleSubmit}>Continue</button></a><br></br> */}
+        
+        
         </>
     )
 }
