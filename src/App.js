@@ -10,6 +10,7 @@ import AboutPage from './Components/AboutPage/AboutPage.js';
 import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
 import PreviewSite from './PreviewSite/PreviewSite';
+
 import DbData from './Components/DbData/DbData';
 import FaqForm from './Components/Forms/FaqForm/FaqForm';
 import TicketInfo from './Components/Forms/TicketInfo/TicketInfo'; 
@@ -23,8 +24,9 @@ class App extends Component {
           <Switch>
             {/* Landing Page */}
             <Route exact path='/'>
-              <Navbar />
-              <LandingPage />
+              {/* <Navbar /> */}
+              <FaqForm/>
+              {/* <LandingPage /> */}
             </Route>
             {/* About page */}
             <Route exact path='/about'>

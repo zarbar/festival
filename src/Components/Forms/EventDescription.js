@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import './eventdes.css'
 
-export default function EventDescription() {    
+export default function EventDescription() {
+    // function handleChange(e) {
+    //     console.log(new Date(e.target.value));
+    //     console.log(new Date('04-12-2019'))
+    //  if (new Date(e.target.value) < new Date('04-12-2019')) {
+    //      alert('date must be in the future!')
+    //  }      
       
     let [submit, setSubmit] = useState('')
     function handleSubmit() {
@@ -10,18 +16,18 @@ export default function EventDescription() {
     return( 
         <>
         <h1>Tell us some more about your event!</h1>
-        <form id="eventDescriptionForm">
+        <form>
         <label>Event Details: (Don't worry, you can come back to this later!)</label>
-        <textarea className="eventDescriptiontextarea" placeholder="Enter the details of your event here. Explain what people can expect,
-        and why they should be there"></textarea>
+        <textarea placeholder="Enter the details of your event here. Explain what people can expect,
+        and why they should be there!"></textarea>
         <label>Start Date:</label><input type="date"/>
+        <label>Start Time:</label><input type="time"/>
         <label>End Date:</label><input type="date"/>
-        <label>Location: </label><input type="string" placeholder="Sofia, Bulgaria"/>
-        <label>Enter a short blurb about your festival: </label>
-        <textarea className="eventDescriptiontextarea" placeholder="Hogsozzle is a perfoming arts and music festival known for its hog rost"></textarea>
+        <label>End Time:</label><input type="time"/>
         </form>
         <a href="/contactdetails"><button className="item" onClick={handleSubmit}>Continue</button></a><br></br>
         {submit}
+
         </>
     )
 }

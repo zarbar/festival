@@ -32,7 +32,6 @@ input {
     display: flex;
     flex-direction: row;
 }
-
 form .button {
     background: white;
     height: 4em;
