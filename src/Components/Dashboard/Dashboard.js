@@ -1,21 +1,82 @@
 import React from 'react';
 import './Dashboard.css';
+import contact from './icons/contact.png';
+import faq from './icons/FAQ.png';
+import info from './icons/info.png';
+import location from './icons/location.png';
+import ticket from './icons/ticket.png';
+
+let dashboardItems = [
+    {
+        id: 'location',
+        link: '',
+        title: 'Location',
+        icon: location,
+    }, {
+        id: 'info',
+        link: '',
+        title: 'Basic Info',
+        icon: info,
+    },
+    {
+        id: 'contact',
+        link: '',
+        title: 'Contact',
+        icon: contact,
+    },
+    {
+        id: 'FAQ',
+        link: '',
+        title: 'FAQ\'s',
+        icon: faq,
+    },
+    {
+        id: 'ticket',
+        link: '',
+        title: 'Tickets',
+        icon: ticket,
+    },
+];
 
 class Dashboard extends React.Component {
+    constructor() {
+        super();
+        this.state = {
 
-render() {
-    return (
-<>
-        <h1>Your Dashboard</h1>
-        <div className='container'>
-        <div className='item getting'><a href = '../../map.js'>Getting there (location map)</a></div>
-        <div className='item edit'><a href = '../../Forms/EventDescription.js'>Edit schedule</a></div>
-        <div className='item ticket'>Ticket hub</div>
-        <div className='item contact'><a href = '../ContactPage/ContactPage.js'>Contact details</a></div>
-        </div>
-        <div className='preview'>Preview my site</div>
-</>
-    )
+        };
+    }
+
+    dashboardComponents = () => {
+        return dashboardItems.map(({ id, link, title, icon }) => {
+            return (
+                <div className='itemDash' key={icon}>
+                    <a href={link} className='aDashboard'>
+                        <img src={icon} alt={id} className='dashboardIcon' />
+                        {title}
+                    </a>
+                </div>
+            )
+        })
+    }
+
+    render() {
+        return (
+            <>
+
+                <div className='dashboardContainer'>
+                    <span id="dashHeader">Welcome UserName</span>
+                    <div className='buttonContainer'>
+                        {this.dashboardComponents()}
+                    </div>
+                    <a href='/PreviewSite' className='aDashboard'>
+                        <button className='previewDash'>Preview my site
+                            </button>
+                    </a>
+                </div>
+
+            </>
+        );
+    }
 }
-}
+
 export default Dashboard;
