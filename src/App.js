@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Login from './Components/Forms/loginForm.js';
-import SignUp from './Components/Forms/signupForm.js';
-import EventDescription from './Components/Forms/EventDescription.js';
+import Login from './Components/Forms//loginForm/loginForm';
+import SignUp from './Components/Forms/signUpForm/signupForm.js';
+import basicInfo from './Components/Forms/BasicInfo/basicInfo';
 import ContactDetails from './Components/Forms/contactDetails.js';
 import LandingPage from './Components/LandingPage/LandingPage.js';
 import AboutPage from './Components/AboutPage/AboutPage.js';
@@ -12,7 +12,7 @@ import Navbar from './Components/Navbar/Navbar';
 import PreviewSite from './PreviewSite/PreviewSite';
 import DbData from './Components/DbData/DbData';
 import FaqForm from './Components/Forms/FaqForm/FaqForm';
-import TicketInfo from './TicketInfo/TicketInfo';
+import TicketInfo from './Components/Forms/TicketInfo/TicketInfo'; 
 
 
 class App extends Component {
@@ -47,8 +47,8 @@ class App extends Component {
               <SignUp />
             </Route>
             {/* event details form */}
-            <Route exact path='/eventDetailsForm'>
-              <EventDescription />
+            <Route exact path='/basicInfo'>
+              <basicInfo />
             </Route>
             {/* event contact form */}
             <Route exact path='/contactForm'>
