@@ -11,9 +11,9 @@ export default function EventDescription() {
         <>
         <h1>Tell us some more about your event!</h1>
         <form id="eventDescriptionForm">
-        <label>Event Details: (Don't worry, you can come back to this later!)</label>
-        <textarea className="eventDescriptiontextarea" placeholder="Enter the details of your event here. Explain what people can expect,
-        and why they should be there"></textarea>
+        <label>Festival name</label>
+        <input type='text' placeholder="Enter the details of your event here. Explain what people can expect,
+        and why they should be there"></input>
         <label>Start Date:</label><input type="date"/>
         <label>End Date:</label><input type="date"/>
         <label>Location: </label><input type="string" placeholder="Sofia, Bulgaria"/>
