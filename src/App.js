@@ -16,7 +16,6 @@ import FaqForm from './Components/Forms/FaqForm/FaqForm';
 import TicketInfo from './Components/Forms/TicketInfo/TicketInfo';
 import LocationForm from './Components/Forms/Location/Location';
 
-
 class App extends Component {
   render() {
     return (
