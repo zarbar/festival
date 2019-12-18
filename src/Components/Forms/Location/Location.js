@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-//todo add google maps aaaqaaqqqqqqpi
+//todo add google maps api
 export default function Location() {
+    let [postcode, setPostcode] = useState("");
     return (
         <>
             <label>Add postcode to display location map: </label>
