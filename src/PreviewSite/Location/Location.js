@@ -22,8 +22,6 @@ export default class Location extends React.Component {
                 {/* <img src={gettingthere} alt='gettingthere logo' /> */}
                 <p>For international festival goers, the best way to get to Hogsozzzle is to fly to Sofia airport,which is one hour away from where the festival takes place.  </p>
                 <button>View more</button>
-                <h1>FAQ</h1>
-                <img src={faq} alt='faq logo' />
                 </div>
         );
     }

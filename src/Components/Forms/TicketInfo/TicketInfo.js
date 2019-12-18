@@ -14,8 +14,6 @@ export default function TicketInfo() {
         <textarea className="infoTextArea" type='text' placeholder='Ticket description'></textarea>
         <p>Enter a link to your ticket provider</p>
         <textarea className="infoTextArea" type='text' placeholder='Link of your ticket'></textarea>
-        <p>Text for ticket button</p>
-        <textarea className="infoTextArea" type='text' placeholder='Name your call to action'></textarea>
         <p>Select your display image:</p>
         <div className='slide-photo'>
           <div className='img-item'>
