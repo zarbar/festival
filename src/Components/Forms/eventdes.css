@@ -1,0 +1,9 @@
+#eventDescriptionForm {
+    padding: 1em;
+}
+
+.eventDescriptiontextarea {
+    font-family: dosis;
+    width: 100%;
+    height: 20vh;
+}
