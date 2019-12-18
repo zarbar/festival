@@ -24,8 +24,7 @@ class App extends Component {
           <Switch>
             {/* Landing Page */}
             <Route exact path='/'>
-              {/* <Navbar /> */}
-              <FaqForm/>
+              <Navbar />
               {<LandingPage />}
             </Route>
             {/* About page */}
