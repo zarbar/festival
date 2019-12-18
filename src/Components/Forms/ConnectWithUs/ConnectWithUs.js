@@ -7,9 +7,7 @@ render() {
     return (
 <>
         <h1>Step 5 - Connect with us</h1>
-        <form className='connectForm'>
-            <p>Got a newsletter? Let people subscribe</p>
-            <textarea className='infoTextArea' type="text" id='connect'></textarea>       
+        <form className='connectForm'>      
             <p>Add social media links:</p>
             <textarea className='infoTextArea' type="text" id='connect'></textarea>
             <textarea className='infoTextArea' type="text" id='connect'></textarea>
@@ -32,3 +30,4 @@ render() {
 export default ContactPage; 
 
 // <textarea type='text'
+
