@@ -28,6 +28,3 @@ render() {
 }
 }
 export default ContactPage; 
-
-// <textarea type='text'
-

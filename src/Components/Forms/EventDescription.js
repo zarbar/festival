@@ -44,7 +44,6 @@ export default function EventDescription() {
         </form>
         <a href="/contactdetails"><button className="item" onClick={handleSubmit}>Continue</button></a><br></br>
         {submit}
-
         </>
     )
 }

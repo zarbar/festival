@@ -15,7 +15,6 @@ export default class Faq extends React.Component {
             answer1: 'answer 1',
             question2: 'question 2',
             answer2: 'answer 2',
-
         }
     }
 
