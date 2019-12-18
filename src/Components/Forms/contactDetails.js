@@ -1,3 +1,5 @@
+// Do we still want this page?
+
 import React, { useState } from 'react';
 
 export default function ContactDetails() {
