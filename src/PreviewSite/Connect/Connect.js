@@ -5,7 +5,8 @@ import './Connect.css'
 export default class Connect extends React.Component {
  constructor (props) {
      super (props)
-     this.state = {}
+     this.state = {
+     }
  }
 
  render () {
