@@ -10,33 +10,20 @@ export default function SignUp() {
     return (
         <>
 
-            <main id='signUpPageContent'>
-                {name}
-                <br />
-                {/* google login button at top */}
+            {name}
+            <form>
+                <input type="text" placeholder="Festival name" required onChange={handleNameChange}></input>
+                <input type="text" placeholder="Email" required></input>
+                <input type="text" placeholder="Password" required></input>
+                <input type="text" placeholder="Confirm assword" required></input>
+            </form>
+            <div className="container">
+
+                <button className="item">Create Account</button>
                 <GoogleLoginButton text="Sign Up with Google" />
-                <p id="or"><span>or</span></p>
-                <p>sign up with your email address</p>
+                <a href="/login"><button className="item">Already have an account?</button></a>
 
-                <form id='loginForm'>
-                    <input type="text" placeholder="Festival name" required onChange={handleNameChange} />
-
-                    <input type="text" placeholder="Email" required />
-
-                    <input type="text" placeholder="Password" required />
-
-                    <input type="text" placeholder="Confirm Password" required />
-                </form>
-
-
-                <div className="container">
-
-                    <button className="item">Create Account</button>
-
-                    <a href="/login"><button className="item">Already have an account?</button></a>
-
-                </div>
-            </main>
+            </div>
         </>
     )
 }

@@ -9,30 +9,30 @@ import ticket from './icons/ticket.png';
 let dashboardItems = [
     {
         id: 'location',
-        link: '',
+        link: '/location',
         title: 'Location',
         icon: location,
     }, {
         id: 'info',
-        link: '',
+        link: '/basicInfo',
         title: 'Basic Info',
         icon: info,
     },
     {
         id: 'contact',
-        link: '',
+        link: '/contactForm',
         title: 'Contact',
         icon: contact,
     },
     {
         id: 'FAQ',
-        link: '',
+        link: '/faqForm',
         title: 'FAQ\'s',
         icon: faq,
     },
     {
         id: 'ticket',
-        link: '',
+        link: '/ticketInfoForm',
         title: 'Tickets',
         icon: ticket,
     },

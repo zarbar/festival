@@ -1,10 +1,10 @@
 import React from 'react';
 import './loginFormStyle.css';
-import GoogleLoginButton from '../GoogleLogin/GoogleLoginButton';
+import GoogleLoginButton from '../../GoogleLogin/GoogleLoginButton';
 
-export default function Login() {
+export default function LoginForm() {
     return (
-        <main id='loginPageMain'>
+        <main id='loginFormMain'>
             <GoogleLoginButton text="Log In with Google" />
             <p id="or"><span>or</span></p>
             <p>Log in with your email address</p>
@@ -15,10 +15,9 @@ export default function Login() {
 
             <div className="container">
                 <button className="item">Login</button>
-                <GoogleLoginButton text="Log In with Google" />
                 <em>Don't have an account yet?</em>
                 <a href="/signup"><button className="item">Create New Account</button></a>
             </div>
-        </main >
+        </main>
     )
 }

@@ -5,16 +5,15 @@ const axios = require('axios').default;
 
 
 export default function GoogleLoginButton(props) {
-    const [googleID, setGoogleID] = React.useState('');
+    const [googleID, setGoogleID] = React.useState(0);
+    const [redirect, setRedirect] = React.useState(false);
+
 
     const responseGoogle = (response) => {
-        setGoogleID(response.w3.Eea);
-        console.log('googleID: ' + googleID);
         let user = {
             googleId: response.w3.Eea,
             username: response.w3.ig
         };
-        console.log(user);
         axios.post('/checkuser', user)
             .then(function (response) {
                 console.log(response);
@@ -22,9 +21,8 @@ export default function GoogleLoginButton(props) {
             .catch(function (error) {
                 console.log(error);
             })
-        console.log('googleID: ' + googleID);
-        return <Redirect to={`/dashboard/wee`} />
-        //add the redirect here from react-router-dom... like how you did on details page of kodflix - redirect if not found example
+        setGoogleID(response.w3.Eea);
+        setRedirect(true)
     }
 
     return (
@@ -36,7 +34,7 @@ export default function GoogleLoginButton(props) {
                 onFailure={responseGoogle}
                 cookiePolicy={'single_host_origin'}
             />
+            {redirect && <Redirect to={`/dashboard/${googleID}`} />}
         </>
     )
 }
-

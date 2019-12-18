@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Login from './Components/Forms/loginForm.js';
-import SignUp from './Components/Forms/signupForm.js';
-import EventDescription from './Components/Forms/EventDescription.js';
-import ContactDetails from './Components/Forms/contactDetails.js';
+import LoginForm from './Components/Forms/LoginForm/loginForm';
+import SignUpForm from './Components/Forms/SignUpForm/signupForm.js';
+import BasicInfo from './Components/Forms/BasicInfo/basicInfo';
+import ConnectWithUs from './Components/Forms/ConnectWithUs/ConnectWithUs';
 import LandingPage from './Components/LandingPage/LandingPage.js';
 import AboutPage from './Components/AboutPage/AboutPage.js';
 import Dashboard from './Components/Dashboard/Dashboard.js';
@@ -13,6 +13,7 @@ import PreviewSite from './PreviewSite/PreviewSite';
 import DbData from './Components/DbData/DbData';
 import FaqForm from './Components/Forms/FaqForm/FaqForm';
 import TicketInfo from './Components/Forms/TicketInfo/TicketInfo';
+import LocationForm from './Components/Forms/Location/Location';
 
 class App extends Component {
   render() {
@@ -38,20 +39,24 @@ class App extends Component {
             {/* login page/form */}
             <Route exact path='/login'>
               <Navbar />
-              <Login />
+              <LoginForm />
             </Route>
             {/* signup page/form */}
             <Route exact path='/signup'>
               <Navbar />
-              <SignUp />
+              <SignUpForm />
             </Route>
             {/* event details form */}
-            <Route exact path='/eventDetailsForm'>
-              <EventDescription />
+            <Route exact path='/basicInfo'>
+              <BasicInfo />
+            </Route>
+            {/* Location form */}
+            <Route exact path='/location'>
+              <LocationForm />
             </Route>
             {/* event contact form */}
             <Route exact path='/contactForm'>
-              <ContactDetails />
+              <ConnectWithUs />
             </Route>
             {/* FAQ form */}
             <Route exact path='/faqForm'>
@@ -71,7 +76,7 @@ class App extends Component {
             </Route>
           </Switch>
         </div>
-      </Router>
+      </Router >
     );
   }
 }

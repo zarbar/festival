@@ -11,6 +11,10 @@
     margin-top: 0;
 }
 
+.navarbarItem {
+    flex: 1;
+}
+
 #opacityOn {
     opacity: 0.6;
 }
