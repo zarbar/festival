@@ -32,4 +32,4 @@ export default class Connect extends React.Component {
             </>
         );
     }
-}
+    }

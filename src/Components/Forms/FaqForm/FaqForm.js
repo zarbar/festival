@@ -1,9 +1,6 @@
 import React from 'react';
 import './FaqForm.css';
 import './generalFormStyle.css'
-import faq1 from '../../../images/faqImages/faq1.jpg'
-import faq2 from '../../../images/faqImages/faq2.jpg'
-import faq3 from '../../../images/faqImages/faq3.jpg'
 
 export default class FaqBackend extends React.Component {
     constructor(props) {
