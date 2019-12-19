@@ -8,22 +8,6 @@ import faq3 from '../../../images/faqImages/faq3.jpg'
 export default class FaqBackend extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { inputs: [] };
-    }
-
-    appendInput(e) {
-        e.preventDefault()
-        this.setState({ inputs: [...this.state.inputs, this.state.inputs.length + 1] },
-            () => console.log(this.state)
-        )
-    }
-
-    decreaseInput(e) {
-        e.preventDefault()
-        if (this.state.inputs.length > 0) {
-            this.state.inputs.pop();
-            this.setState(() => ({ inputs: this.state.inputs }));
-        }
     }
 
     render() {
@@ -46,22 +30,6 @@ export default class FaqBackend extends React.Component {
                     <p className='FaqFieldType'>Answer:</p>
                     <textarea type='text' id='faqtextarea'></textarea>
 
-                    {this.state.inputs.map(input => (
-                        <div className='unstyleMe' key={input}>
-                            <p key={input} className='FaqFieldType'>Question:</p>
-                            <input type='text' id='faqinput' ></input>
-
-                            <p className='FaqFieldType'>Answer:</p>
-                            <textarea type='text' id='faqtextarea'></textarea>
-                        </div>
-                    ))}
-
-                    <button onClick={(e) => this.appendInput(e)}>
-                        Add more FAQs
-               </button>
-                    <button onClick={(e) => this.decreaseInput(e)}>
-                        Remove FAQ
-               </button>
                     <p>Select your display image</p>
                     <div className='slide-photo'>
                         <div className='img-item'>
@@ -86,6 +54,5 @@ export default class FaqBackend extends React.Component {
 
             </div>
         );
-
     }
 }
