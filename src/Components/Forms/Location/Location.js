@@ -20,7 +20,7 @@ export default function Location() {
             <label>Add details about getting to your venue: </label><input type="text" onChange={accessDetails}/>
             <textarea placeholder="Eg. nearest aiports, train stations, taxis, parking, shuttle buses etc"></textarea>
             <input type="checkbox" onChange={handleWeatherChange}/>
-            <label>Add weather forecast feature to display a 7 day weather forecast widget to your homepage</label>
+            <label>Add weather forecast feature to display a 7 day weather forecast widget to your homepage</label>git 
       />
 
         </>
