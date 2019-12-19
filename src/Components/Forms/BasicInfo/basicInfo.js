@@ -1,11 +1,27 @@
 import React, { useState } from 'react';
-import './basicInfo.css'
+import {useParams} from 'react-router-dom';
+import './basicInfo.css';
+import axios from 'axios';
 
 export default function EventDescription() {    
-      
+    let { userId } = useParams();
+    const fakeData = 'this is test data put here by Zara to test backend server - seems to be working which is awesome!';
+
     let [submit, setSubmit] = useState('')
     function handleSubmit() {
-        setSubmit('Splendid, thank you!')
+        setSubmit('Splendid, thank you!');
+        sendDataBackend(fakeData, userId);
+    }
+
+    function handleEventName(e) {
+        localStorage.setItem("Event Name", e.target.value);
+
+    }
+    function handleStartDate(e) {
+        localStorage.setItem("Start Date", e.target.value)
+    }
+    function handleEndDate(e) {
+        localStorage.setItem("End date", e.target.value)
     }
     function handleEventName(e) {
         localStorage.setItem("Event Name", e.target.value)
@@ -42,9 +58,6 @@ export default function EventDescription() {
             </div>
             {submit}
         </form>
-        {/* <a href="/contactdetails"><button className="item" onClick={handleSubmit}>Continue</button></a><br></br> */}
-        
-        
         </>
     )
 }

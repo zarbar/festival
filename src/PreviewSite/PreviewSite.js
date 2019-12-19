@@ -1,6 +1,5 @@
 import React from 'react';
 import './PreviewSite.css'
-// import NavBar from './NavBar/NavBar'
 import FestivalInfo from './FestivalInfo/FestivalInfo';
 import Faq from './FAQ/FAQ';
 import Tickets from './Tickets/Tickets';
@@ -13,12 +12,10 @@ export default class PreviewSite extends React.Component {
         super(props)
         this.state = {}
     }
-
     render() {
         return (
             <>
                 <div className='hogsozzle'>
-                    {/* <NavBar /> */}
                     <FestivalInfo />
                     <Tickets />
                     <Location />

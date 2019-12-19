@@ -17,9 +17,11 @@
     "react-scripts": "^3.3.0"
   },
   "scripts": {
-    "start-all": "npm-run-all -p back start",
-    "back": "nodemon src/backend/server.js ",
-    "start": "react-scripts start",
+    "start": "npm-run-all -s build heroku-back",
+    "start-all": "npm-run-all -p back start-front",
+    "heroku-back": "node src/backend/server.js",
+    "back": "nodemon src/backend/server.js",
+    "start-front": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

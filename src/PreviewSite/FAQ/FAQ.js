@@ -15,7 +15,6 @@ export default class Faq extends React.Component {
             answer1: 'answer1',
             question2: 'question 2',
             answer2: 'answer2',
-
         }
     }
 
@@ -23,12 +22,13 @@ export default class Faq extends React.Component {
         return (
             <>
                 <h1>FAQ</h1>
+                <img src={this.state.faqImage1} alt='faq logo' />
                 <h2>{this.state.question1}</h2>
                 <p>{this.state.answer1}</p>
                 <h2>{this.state.question2}</h2>
                 <p>{this.state.answer2}</p>
                 <img src={this.state.faqImage1} alt='faq logo' />
-                </>
+            </>
         )
     };
 }

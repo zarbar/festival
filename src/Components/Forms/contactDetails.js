@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 // Do we still want this page?
 
+=======
+>>>>>>> upstream/master
 import React, { useState } from 'react';
 
 export default function ContactDetails() {

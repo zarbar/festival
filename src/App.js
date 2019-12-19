@@ -10,6 +10,7 @@ import AboutPage from './Components/AboutPage/AboutPage.js';
 import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
 import PreviewSite from './PreviewSite/PreviewSite';
+
 import DbData from './Components/DbData/DbData';
 import FaqForm from './Components/Forms/FaqForm/FaqForm';
 import TicketInfo from './Components/Forms/TicketInfo/TicketInfo';
@@ -24,7 +25,7 @@ class App extends Component {
             {/* Landing Page */}
             <Route exact path='/'>
               <Navbar />
-              <LandingPage />
+              {<LandingPage />}
             </Route>
             {/* About page */}
             <Route exact path='/about'>
@@ -47,7 +48,7 @@ class App extends Component {
               <SignUpForm />
             </Route>
             {/* event details form */}
-            <Route exact path='/basicInfo'>
+            <Route exact path='/basicInfo/:userId'>
               <BasicInfo />
             </Route>
             {/* Location form */}
