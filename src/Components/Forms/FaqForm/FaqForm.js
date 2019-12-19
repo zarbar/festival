@@ -35,7 +35,6 @@ export default class FaqBackend extends React.Component {
     handleFaq2(e) {
         localStorage.setItem("FAQ2", e.target.value)
     }
-
     handleFaq2Answer(e) {
         localStorage.setItem("FAq2Answer", e.target.value)
     }
@@ -59,23 +58,8 @@ export default class FaqBackend extends React.Component {
                     <input type='text' id='faqinput' onChange={this.handleFaq2}></input>
 
                     <p className='FaqFieldType'>Answer:</p>
-                    <textarea type='text' id='faqtextarea' onChange={this.handleFaq2Answer} />
 
-                    <p>Select your display image</p>
-                    <div className='slide-photo'>
-                        <div className='img-item'>
-                            <img src={faq1} alt='go' />
-                            <input className='box' type="checkbox" name='festival' value="festival" />
-                        </div>
-                        <div className='img-item'>
-                            <img src={faq2} alt='go' />
-                            <input className='box' type="checkbox" name='concert' value="concert" />
-                        </div>
-                        <div className='img-item'>
-                            <img src={faq3} alt='go' />
-                            <input className='box' type="checkbox" name='music' value="music" />
-                        </div>
-                    </div>
+                    <textarea type='text' id='faqtextarea' onChange={this.handleFaq2Answer} />
                     <div className="containerFaq">
                         <a href='/dashboard/123' className="item">Save and return to dashboard</a>
                         <a href='/contactForm' className="item">Save and continue</a>

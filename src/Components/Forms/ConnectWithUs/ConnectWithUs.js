@@ -19,7 +19,6 @@ export default function ContactPage() {
     }
 
     return (
-
         <>
             <h1>Step 5 - Connect with us</h1>
             <form className='connectForm'>
@@ -28,7 +27,7 @@ export default function ContactPage() {
                 <textarea className='infoTextArea' type="text" id='connect' onChange={socialMedia2Change}></textarea>
                 <textarea className='infoTextArea' type="text" id='connect' onChange={socialMedia3Change}></textarea>
                 <p>Add contact email </p>
-                <textarea className='infoTextArea' type="text" id='connect' onChange={emailChange}></textarea>
+                <textarea className='infoTextArea' type="email" id='connect' onChange={emailChange}></textarea>
                 <p>Add company address</p>
                 <textarea className='infoTextArea' type="text" id='connect' onChange={addressChange}></textarea>
                 <div className="containerEndButtons">

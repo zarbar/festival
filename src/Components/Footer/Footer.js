@@ -10,9 +10,9 @@ export default function Footer() {
                     <img src={logo1} alt='logo1' />
                 </div>
                 <div className='footer-nav'>
-                    <p>Get started</p>
-                    <p>About</p>
-                    <p>Login</p>
+                    <a href="/signup"><p>Get started</p></a>
+                    <a href="/about"><p>About</p></a>
+                    <a href="/login"><p>Log In</p></a>
                 </div>
 
             </footer>

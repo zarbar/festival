@@ -5,6 +5,7 @@ footer {
     justify-content: space-between;
     color: #474D69;
     padding: .2em;
+    text-decoration: none;
 }
 
 footer .logo1 img {
