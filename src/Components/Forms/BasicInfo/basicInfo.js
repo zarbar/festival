@@ -46,7 +46,7 @@ export default function EventDescription() {
 
     return( 
         <>
-        <h1>Tell us some more about your event!</h1>
+        <h1>Step 1: Basic </h1>
         <form id="eventDescriptionForm">
         <label>Festival name</label>
         <input type='text' placeholder="Enter the details of your event here. Explain what people can expect,

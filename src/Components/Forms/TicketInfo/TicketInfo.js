@@ -14,7 +14,7 @@ export default function TicketInfo() {
 
   return (
     <div className='ticket'>
-      <h1>Ticket info</h1>
+      <h1>Step 2: Ticket info</h1>
       <form action="" id='ticketInfoForm'>
 
         <p>Add a ticket description</p>

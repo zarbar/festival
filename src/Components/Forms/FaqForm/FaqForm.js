@@ -15,7 +15,7 @@ export default class FaqBackend extends React.Component {
 
             <div className='FaqsFormPage'>
 
-                <h1>FAQs</h1>
+                <h1>Step 4: FAQs</h1>
                 <form>
                     <h2>Please add your frequently asked questions for attendees</h2>
                     <p className='FaqFieldType'>Question:</p>
