@@ -17,7 +17,6 @@ export default class Location extends React.Component {
                 <h2>Getting here</h2>
                 <p>{this.state.access}</p>
                 <p>For satnavs: {this.state.postcode}</p>
-                <button>View more</button>
             </div>
         );
     }

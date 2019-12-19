@@ -59,7 +59,7 @@ export default class FaqBackend extends React.Component {
                     <input type='text' id='faqinput' onChange={this.handleFaq2}></input>
 
                     <p className='FaqFieldType'>Answer:</p>
-                    <textarea type='text' id='faqtextarea'></textarea>
+                    <textarea type='text' id='faqtextarea' onChange={this.handleFaq2Answer} />
 
                     <p>Select your display image</p>
                     <div className='slide-photo'>
