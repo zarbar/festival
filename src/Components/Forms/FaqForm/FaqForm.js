@@ -6,9 +6,6 @@ import faq2 from '../../../images/faqImages/faq2.jpg'
 import faq3 from '../../../images/faqImages/faq3.jpg'
 
 export default class FaqBackend extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (

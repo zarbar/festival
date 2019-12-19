@@ -1,16 +1,16 @@
 import React from 'react';
 import {useParams} from 'react-router-dom';
 import './basicInfo.css';
-import axios from 'axios';
+// import axios from 'axios';
 
 export default function EventDescription() {    
-    let { userId } = useParams();
-    const fakeData = 'this is test data put here by Zara to test backend server - seems to be working which is awesome!';
+    //DO NOT DELETE - this is for MONGODB
+    //let { userId } = useParams();
+    // const fakeData = 'this is test data put here by Zara to test backend server - seems to be working which is awesome!';
 
 
     function handleEventName(e) {
         localStorage.setItem("Event Name", e.target.value);
-
     }
     function handleStartDate(e) {
         localStorage.setItem("Start Date", e.target.value)

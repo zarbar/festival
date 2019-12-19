@@ -3,6 +3,7 @@ import './loginFormStyle.css';
 import GoogleLoginButton from '../../GoogleLogin/GoogleLoginButton';
 
 export default function LoginForm() {
+
     return (
         <main id='loginFormMain'>
             <GoogleLoginButton text="Log In with Google" />
@@ -10,13 +11,13 @@ export default function LoginForm() {
             <p>Log in with your email address</p>
             <form>
                 <input className='email-input' type="text" placeholder="email"></input>
-                <input className='email-input' type="text" placeholder="password"></input>
+                <input className='email-input' type="password" placeholder="password"></input>
             </form>
             <div className="container">
-                <button className="item">Login</button><br/>
-                <em>Don't have an account yet?</em><br/>
-                <a href="/signup"><button id="item-anchor">Create New Account</button></a>
-            </div><br/>
+                <a href='/dashboard/testUser'><button className="item">Login</button></a>
+                <em>Don't have an account yet?</em>
+                <a href="/signup"><button id="item-anchor" className="item">Create New Account</button></a>
+            </div>
         </main>
     )
 }

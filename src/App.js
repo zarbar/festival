@@ -48,7 +48,7 @@ class App extends Component {
               <SignUpForm />
             </Route>
             {/* event details form */}
-            <Route exact path='/basicInfo/:userId'>
+            <Route exact path='/basicInfo/'>
               <BasicInfo />
             </Route>
             {/* Location form */}
