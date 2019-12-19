@@ -1,12 +1,32 @@
 import React, { useState } from 'react';
-import './basicInfo.css'
+import {useParams} from 'react-router-dom';
+import './basicInfo.css';
+import axios from 'axios';
 
 export default function EventDescription() {    
-      
+    let { userId } = useParams();
+    const fakeData = 'this is test data put here by Zara to test backend server - seems to be working which is awesome!';
+
     let [submit, setSubmit] = useState('')
     function handleSubmit() {
-        setSubmit('Splendid, thank you!')
+        setSubmit('Splendid, thank you!');
+        sendDataBackend(fakeData, userId);
     }
+
+    let sendDataBackend = (formData, userId) => {
+        let dataToPass = {
+            googleId: userId,
+            festivalData: formData
+        }
+        axios.post('/saveFormData', dataToPass)
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+    }
+
     return( 
         <>
         <h1>Tell us some more about your event!</h1>
@@ -26,9 +46,6 @@ export default function EventDescription() {
             </div>
             {submit}
         </form>
-        {/* <a href="/contactdetails"><button className="item" onClick={handleSubmit}>Continue</button></a><br></br> */}
-        
-        
         </>
     )
 }

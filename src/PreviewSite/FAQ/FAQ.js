@@ -12,9 +12,9 @@ export default class Faq extends React.Component {
             faqImage2: faq2,
             faqImage3: faq3,
             question1: 'question 1',
-            answer1: 'answer 1',
+            answer1: 'answer1',
             question2: 'question 2',
-            answer2: 'answer 2',
+            answer2: 'answer2',
         }
     }
 
@@ -27,7 +27,8 @@ export default class Faq extends React.Component {
                 <p>{this.state.answer1}</p>
                 <h2>{this.state.question2}</h2>
                 <p>{this.state.answer2}</p>
-                </>
+                <img src={this.state.faqImage1} alt='faq logo' />
+            </>
         )
     };
 }
