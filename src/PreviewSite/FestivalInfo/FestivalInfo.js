@@ -19,9 +19,9 @@ export default class FestivalInfo extends React.Component {
         return (
             <>
                 <h1>{this.state.festivalName}</h1>
-                <p>{this.state.blurb}</p>
-                <p>{this.state.location}</p>
-                <p>{this.state.startDate} - {this.state.endDate}</p>
+                <p className='previewsiteblurb'>{this.state.blurb}</p>
+                <p className='previewsiteblurb'>{this.state.location}</p>
+                <p className='previewsiteblurb'>{this.state.startDate} - {this.state.endDate}</p>
             </>
         )
     };

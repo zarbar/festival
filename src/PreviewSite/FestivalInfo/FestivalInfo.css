@@ -5,6 +5,12 @@
     border: 5px solid red;
 }
 
+.previewsiteblurb {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0.7;
+}
+
 .first-image img {
     width: 100%;
     height: auto;
