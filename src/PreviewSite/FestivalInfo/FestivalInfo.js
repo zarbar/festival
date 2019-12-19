@@ -11,7 +11,7 @@ export default class FestivalInfo extends React.Component {
             location: localStorage.getItem("Location"),
             eventDescription: '',
             startDate: localStorage.getItem("Start Date"),
-            endDate: localStorage.getItem("End Date")
+            endDate: localStorage.getItem("End date")
 
         }
     }

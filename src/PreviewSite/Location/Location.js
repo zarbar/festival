@@ -5,18 +5,23 @@ export default class Location extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            access: localStorage.getItem("access"),
-            postcode: localStorage.getItem("postcode")
+            access: localStorage.getItem("Access"),
+            address1: localStorage.getItem("Address Line 1"),
+            address2: localStorage.getItem("Address Line 2"),
+            address3: localStorage.getItem("Address Line 3"),
         }
     }
 
     render() {
         return (
             <div className='guest-info'>
-                <h1>Information</h1>
-                <h2>Getting here</h2>
+                <h1>Location</h1>
+                <p>{this.state.address1}<br />
+                    {this.state.address2}<br />
+                    {this.state.address3}
+                </p>
+                <h2>Getting there</h2>
                 <p>{this.state.access}</p>
-                <p>For satnavs: {this.state.postcode}</p>
             </div>
         );
     }

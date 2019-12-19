@@ -38,16 +38,24 @@ db.connect().then(dbo => {
     })
 });
 
+// db.connect().then(dbo => {
+//     app.post('/saveFormData', (req, res) => {
+//         let findDoc = { googleId: req.body.googleId };
+//         let newData = { $set: { festivalInfo: { basicFormData: req.body.festivalData } } };
+//         dbo.collection('festipalusers').updateOne(findDoc, newData, function (err, res) {
+//             if (err) throw err;
+//             console.log("document updated");
+//         })
+//     })
+// })
+
+
 db.connect().then(dbo => {
-    app.post('/saveFormData', (req, res) => {
-        let findDoc = { googleId: req.body.googleId };
-        let newData = { $set: { festivalInfo: { basicFormData: req.body.festivalData } } };
-        dbo.collection('festipalusers').updateOne(findDoc, newData, function (err, res) {
-            if (err) throw err;
-            console.log("document updated");
-        })
+    app.get('/userData', (req, res) => {
+        dbo.collection('festipalusers').findOne({ googleId: req.body.googleId })
+            .then(user => res.send(user.username))
     })
-})
+});
 
 app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, '../../build', 'index.html'));

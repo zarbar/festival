@@ -8,7 +8,7 @@ export default class Faq extends React.Component {
             question1: localStorage.getItem("FAQ1"),
             answer1: localStorage.getItem("FAQ1Answer"),
             question2: localStorage.getItem("FAQ2"),
-            answer2: localStorage.getItem("FAQ2Answer"),
+            answer2: localStorage.getItem("FAq2Answer"),
         }
     }
 

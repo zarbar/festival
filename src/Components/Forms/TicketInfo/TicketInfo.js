@@ -22,9 +22,9 @@ export default function TicketInfo() {
 
         <textarea className="infoTextArea" type='text' placeholder='Link of your ticket' onChange={ticketLink}></textarea>
 
-        <div className="containerTicketInfo">
-          <a href='/dashboard/123' className="item">Save and return to dashboard</a>
-          <a href='/location' className="item">Save and continue</a>
+        <div className="buttonBoxForms">
+          <a href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
+          <a href='/location' className="buttonBoxFormButton">Save and continue</a>
         </div>
       </form>
     </div>

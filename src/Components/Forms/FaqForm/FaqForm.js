@@ -57,9 +57,10 @@ export default class FaqBackend extends React.Component {
                     <p className='FaqFieldType'>Answer:</p>
 
                     <textarea type='text' id='faqtextarea' onChange={this.handleFaq2Answer} />
-                    <div className="containerFaq">
-                        <a href='/dashboard/123' className="item">Save and return to dashboard</a>
-                        <a href='/contactForm' className="item">Save and continue</a>
+
+                    <div className="buttonBoxForms">
+                        <a href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
+                        <a href='/contactForm' className="buttonBoxFormButton">Save and continue</a>
                     </div>
                 </form>
 
