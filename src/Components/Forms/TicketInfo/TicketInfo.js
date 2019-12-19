@@ -39,7 +39,7 @@ export default function TicketInfo() {
         </div>
         <div className="containerTicketInfo">
           <a href='/dashboard/123' className="item">Save and return to dashboard</a>
-          <a href='/PreviewSite' className="item">Save and continue</a>
+          <a href='/location' className="item">Save and continue</a>
         </div>
       </form>
     </div>

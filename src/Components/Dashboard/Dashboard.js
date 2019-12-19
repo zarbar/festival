@@ -24,7 +24,7 @@ let dashboardItems = [
         link: '/location',
         title: 'Location',
         icon: location,
-    }, 
+    },
     {
         id: 'FAQ',
         link: '/faqForm',
@@ -37,8 +37,8 @@ let dashboardItems = [
         title: 'Contact',
         icon: contact,
     },
-    
-    
+
+
 ];
 
 class Dashboard extends React.Component {
@@ -54,10 +54,10 @@ class Dashboard extends React.Component {
                 <div className='itemDash' key={icon}>
                     <a href={link} className='aDashboard'>
                         <img src={icon} alt={id} className='dashboardIcon' />
-                <div className='icontitle'/> {title}
-                </a>
+                        <div className='icontitle' /> {title}
+                    </a>
                 </div>
-                
+
             )
         })
     }
@@ -70,7 +70,7 @@ class Dashboard extends React.Component {
                     <div className='buttonContainer'>
                         {this.dashboardComponents()}
                     </div>
-                    <a href='/PreviewSite' className='aDashboard'>
+                    <a href='/PreviewSite' className='aDashboard' target="_blank" rel="noopener noreferrer">
                         <button className='previewDash'>Preview my site
                             </button>
                     </a>
