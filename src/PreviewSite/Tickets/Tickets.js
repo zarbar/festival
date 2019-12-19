@@ -20,8 +20,9 @@ export default class Tickets extends React.Component {
         return (
             <div className='buy-tickets'>
                 <p>{this.state.ticketDes}</p>
-                <button className='button'
-                ><a href={this.state.ticketLink}>Buy Tickets</a></button>
+                <button className='btn'>
+                    <a href={this.state.ticketLink}>Buy Tickets</a>
+                </button>
                 <img src={this.state.imgSrc1} alt='your' />
             </div>
         );

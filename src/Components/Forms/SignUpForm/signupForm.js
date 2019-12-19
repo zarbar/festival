@@ -30,6 +30,7 @@ export default function SignUp() {
                 <p>sign up with your email address:</p>
 
                 <form id='loginForm'>
+
                     <input type="text" placeholder="User name" required onChange={userNameChange} />
                     <input type="text" placeholder="Festival name" required onChange={handleNameChange} />
                     <input type="text" placeholder="Email" required onChange={userEmailChange} />
@@ -37,9 +38,8 @@ export default function SignUp() {
                 </form>
 
                 <div className="container">
-                    <a href='/dashboard/testuser'>
-                        <button className="item">Create Account</button></a>
-                    <a href="/login"><button className="item">Already have an account?</button></a>
+                    <a href='/dashboard/testuser'><button className="item">Create Account</button></a>
+                    <a className='account-anchor' href="/login"><button className="item">Already have an account?</button></a>
                 </div>
             </main>
         </>
