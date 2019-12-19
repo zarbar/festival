@@ -2,22 +2,21 @@ import React from 'react';
 import './ConnectWithUs.css';
 
 export default function ContactPage() {
-
-    function socialMedia1Change(e) {
+        function socialMedia1Change(e) {
         localStorage.setItem('Social Media 1', e.target.value)
-    }
-    function socialMedia2Change(e) {
-        localStorage.setItem('Social Media 2', e.target.value)
-    }
-    function socialMedia3Change(e) {
-        localStorage.setItem('Social Media 3', e.target.value)
-    }
-    function emailChange(e) {
-        localStorage.setItem('Email', e.target.value)
-    }
-    function addressChange(e) {
-        localStorage.setItem('Address', e.target.value)
-    }
+        }
+        function socialMedia2Change(e) {
+            localStorage.setItem('Social Media 2', e.target.value)
+            }
+        function socialMedia3Change(e) {
+                localStorage.setItem('Social Media 3', e.target.value)
+                }
+        function emailChange(e) {
+            localStorage.setItem('Email', e.target.value)
+        }
+        function addressChange(e) {
+            localStorage.setItem('Address', e.target.value)
+        }
 
     return (
         <>
@@ -37,7 +36,8 @@ export default function ContactPage() {
                 </div>
             </form>
         </>
-    )
-
-    
+    ) 
 }
+
+
+

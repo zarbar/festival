@@ -50,9 +50,7 @@ export default function EventDescription() {
         <form id="eventDescriptionForm">
         <label>Festival name</label>
         <input type='text' placeholder="Enter the details of your event here. Explain what people can expect,
-        and why they should be there"
-        onChange={handleEventName}
-        ></input>
+        and why they should be there" onChange={handleEventName}></input>
         <label>Start Date:</label><input type="date" onChange={handleStartDate}/>
         <label>End Date:</label><input type="date" onChange={handleEndDate}/>
         <label>Location: </label><input type="string" placeholder="Sofia, Bulgaria" onChange={handleLocation}/>

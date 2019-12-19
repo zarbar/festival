@@ -11,10 +11,10 @@ export default class Faq extends React.Component {
             faqImage1: faq1,
             faqImage2: faq2,
             faqImage3: faq3,
-            question1: 'question 1',
-            answer1: 'answer1',
-            question2: 'question 2',
-            answer2: 'answer2',
+            question1: localStorage.getItem("FAQ1"),
+            answer1: localStorage.getItem("FAQ1Answer"),
+            question2: localStorage.getItem("FAQ2"),
+            answer2: localStorage.getItem("FAQ2Answer"),
         }
     }
 
