@@ -42,7 +42,6 @@ class Dashboard extends React.Component {
     constructor() {
         super();
         this.state = {
-
         };
     }
 
@@ -62,9 +61,8 @@ class Dashboard extends React.Component {
     render() {
         return (
             <>
-
                 <div className='dashboardContainer'>
-                    <span id="dashHeader">Welcome UserName</span>
+                    <span id="dashHeader">Welcome {localStorage.getItem('userName')}!</span>
                     <div className='buttonContainer'>
                         {this.dashboardComponents()}
                     </div>
@@ -73,7 +71,6 @@ class Dashboard extends React.Component {
                             </button>
                     </a>
                 </div>
-
             </>
         );
     }
