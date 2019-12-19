@@ -22,6 +22,7 @@ export default function TicketInfo() {
         <textarea className="infoTextArea" type='text' placeholder='Ticket description' onChange={handleTicketDescription}></textarea>
         <p>Enter a link to your ticket provider</p>
         <textarea className="infoTextArea" type='text' placeholder='Link of your ticket' onChange={handleLink}></textarea>
+
         <p>Select your display image:</p>
         <div className='slide-photo'>
           <div className='img-item'>

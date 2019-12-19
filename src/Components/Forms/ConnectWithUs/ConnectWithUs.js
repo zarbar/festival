@@ -19,6 +19,7 @@ export default function ContactPage() {
         }
 
     return (
+
         <>
             <h1>Step 5 - Connect with us</h1>
             <form className='connectForm'>

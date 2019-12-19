@@ -35,6 +35,7 @@ export default class FaqBackend extends React.Component {
     handleFaq2(e) {
         localStorage.setItem("FAQ2", e.target.value)
     }
+
     handleFaq2Answer(e) {
         localStorage.setItem("FAq2Answer", e.target.value)
     }
