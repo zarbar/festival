@@ -44,3 +44,13 @@ form .button {
 .unstyleMe {
     width: 100%
 }
+
+@media only screen and (max-width: 600px) {
+    .containerFaq {
+        display: flex;
+        flex-direction: column;
+    }
+    .faq-form {
+        width: 92%;
+    }
+  }

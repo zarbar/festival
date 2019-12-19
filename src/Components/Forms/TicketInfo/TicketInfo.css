@@ -60,12 +60,21 @@
     }
 
     #ticketInfoForm {
-        width: 80%;
+        width: 95%;
     }
 
     .ticketInfotextarea {
         width: 75%;
         height: 20%;
         border: 3px solid rgb(218, 65, 96);
+    }
+    .containerTicketInfo {
+        display: flex;
+        flex-direction: column;
+    }
+    .item {
+        width: 250px;
+        font-size: 20px;
+        margin: 5% 0;
     }
 }

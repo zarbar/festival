@@ -19,11 +19,11 @@ export default class Tickets extends React.Component {
     render() {
         return (
             <div className='buy-tickets'>
+                <img src={this.state.imgSrc1} alt='your' />
                 <p>{this.state.ticketDes}</p>
                 <button className='btn'>
                     <a href={this.state.ticketLink}>Buy Tickets</a>
                 </button>
-                <img src={this.state.imgSrc1} alt='your' />
             </div>
         );
     }

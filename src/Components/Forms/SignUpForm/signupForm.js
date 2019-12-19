@@ -28,14 +28,12 @@ export default function SignUp() {
                 <GoogleLoginButton text="Sign Up with Google" />
                 <p id="or"><span>or</span></p>
                 <p>sign up with your email address:</p>
-
                 <form id='loginForm'>
-
-                    <input type="text" placeholder="User name" required onChange={userNameChange} />
-                    <input type="text" placeholder="Festival name" required onChange={handleNameChange} />
-                    <input type="text" placeholder="Email" required onChange={userEmailChange} />
-                    <input type="password" placeholder="Password" required onChange={userPassword} />
-                </form>
+                    <input className='loginClass' type="text" placeholder="User name" required onChange={userNameChange} />
+                    <input className='loginClass' type="text" placeholder="Festival name" required onChange={handleNameChange} />
+                    <input className='loginClass' type="text" placeholder="Email" required onChange={userEmailChange} />
+                    <input className='loginClass' type="password" placeholder="Password" required onChange={userPassword} />
+                </form><br/>
 
                 <div className="container">
                     <a href='/dashboard/testuser'><button className="item">Create Account</button></a>
