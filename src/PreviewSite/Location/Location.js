@@ -12,7 +12,6 @@ export default class Location extends React.Component {
             <div className='guest-info'>
                 <h1>Information</h1>
                 <h2>Weather</h2>
-                {/* <img src={sbtrkt} alt='sbtrkt logo' /> */}
                 <h3>Today is -2°C</h3>
                 <p></p>
                 <h2>Getting here</h2>
