@@ -6,11 +6,11 @@ export default class Connect extends React.Component {
  constructor (props) {
      super (props)
      this.state = {
-         socialMediaLink1: 'Twitter',
-         socialMediaLink2: 'Facebook',
-         socialMediaLink3: 'Instagram',
-         contactEmail: 'info@hogsozzle.com',
-         companyAddres: 'your company address'
+         socialMediaLink1: localStorage.getItem("Social Media 1"),
+         socialMediaLink2: localStorage.getItem("Social Media 2"),
+         socialMediaLink3: localStorage.getItem("Social Media 3"),
+         contactEmail: localStorage.getItem("Email"),
+         companyAddress: localStorage.getItem("Address")
      }
  }
 
@@ -25,7 +25,7 @@ export default class Connect extends React.Component {
         <p>{this.state.socialMediaLink3}</p>
         Email us:
         <a className='festivalEmail' href={`mailto:${this.state.contactEmail}`}>{this.state.contactEmail}</a>
-        <p>{this.state.companyAddres}</p>
+        <p>{this.state.companyAddress}</p>
     </>
      );
  }

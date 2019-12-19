@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import {useParams} from 'react-router-dom';
+// import {useParams} from 'react-router-dom';
 import './basicInfo.css';
 import axios from 'axios';
 
 export default function EventDescription() {    
-    let { userId } = useParams();
-    const fakeData = 'this is test data put here by Zara to test backend server - seems to be working which is awesome!';
+    // let { userId } = useParams();
+    // const fakeData = 'this is test data put here by Zara to test backend server - seems to be working which is awesome!';
 
     let [submit, setSubmit] = useState('')
     function handleSubmit() {

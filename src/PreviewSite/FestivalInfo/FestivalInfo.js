@@ -2,15 +2,16 @@ import React from 'react'
 import './FestivalInfo.css'
 
 export default class FestivalInfo extends React.Component {
+
     constructor(props) {
         super(props)
         this.state = {
-            festivalName: 'Hogsozzle Festival',
-            blurb: 'Performing arts and music festival',
-            location: 'Sofia, Bulgaria',
+            festivalName: localStorage.getItem("Event Name"),
+            blurb: localStorage.getItem("Blurb"),
+            location: localStorage.getItem("Location"),
             eventDescription: '',
-            startDate: '04 Jun 2021',
-            endDate: '07 Jun 2021'
+            startDate: localStorage.getItem("Start Date"),
+            endDate: localStorage.getItem("End Date")
 
         }
     }
