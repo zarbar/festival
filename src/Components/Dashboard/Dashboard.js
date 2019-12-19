@@ -8,27 +8,10 @@ import ticket from './icons/ticket.png';
 
 let dashboardItems = [
     {
-        id: 'location',
-        link: '/location',
-        title: 'Location',
-        icon: location,
-    }, {
         id: 'info',
         link: '/basicInfo',
         title: 'Basic Info',
         icon: info,
-    },
-    {
-        id: 'contact',
-        link: '/contactForm',
-        title: 'Contact',
-        icon: contact,
-    },
-    {
-        id: 'FAQ',
-        link: '/faqForm',
-        title: 'FAQ\'s',
-        icon: faq,
     },
     {
         id: 'ticket',
@@ -36,6 +19,26 @@ let dashboardItems = [
         title: 'Tickets',
         icon: ticket,
     },
+    {
+        id: 'location',
+        link: '/location',
+        title: 'Location',
+        icon: location,
+    }, 
+    {
+        id: 'FAQ',
+        link: '/faqForm',
+        title: 'FAQ\'s',
+        icon: faq,
+    },
+    {
+        id: 'contact',
+        link: '/contactForm',
+        title: 'Contact',
+        icon: contact,
+    },
+    
+    
 ];
 
 class Dashboard extends React.Component {
@@ -51,9 +54,10 @@ class Dashboard extends React.Component {
                 <div className='itemDash' key={icon}>
                     <a href={link} className='aDashboard'>
                         <img src={icon} alt={id} className='dashboardIcon' />
-                        {title}
-                    </a>
+                <div className='icontitle'/> {title}
+                </a>
                 </div>
+                
             )
         })
     }

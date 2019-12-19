@@ -33,9 +33,11 @@ export default function ContactPage() {
                 <textarea className='infoTextArea' type="text" id='connect' onChange={addressChange}></textarea>
                 <div className="containerEndButtons">
                     <a href='/dashboard/123' className="item">Save and return to dashboard</a>
-                    <a href='/PreviewSite' className="item">Save and continue</a>
+                    <a href='/PreviewSite' className="item">Publish my site</a>
                 </div>
             </form>
         </>
     )
+
+    
 }
