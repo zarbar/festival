@@ -11,7 +11,7 @@ export default function TicketInfo() {
   function handleLink(e) {
     localStorage.setItem("Ticket Provider", e.target.value)
   }
- 
+
   return (
     <div className='ticket'>
       <h1>Ticket info</h1>
@@ -38,13 +38,10 @@ export default function TicketInfo() {
           </div>
         </div>
         <div className="containerTicketInfo">
-          <button className="item">Save</button>
-          <button className="item">Preview</button>
-          <button className="item">Next</button>
+          <a href='/dashboard/123' className="item">Save and return to dashboard</a>
+          <a href='/PreviewSite' className="item">Save and continue</a>
         </div>
       </form>
-
-
     </div>
   )
 
