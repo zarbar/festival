@@ -7,9 +7,6 @@ export default function EventDescription() {
     let { userId } = useParams();
     const fakeData = 'this is test data put here by Zara to test backend server - seems to be working which is awesome!';
 
-    function handleSubmit() {
-        sendDataBackend(fakeData, userId);
-    }
 
     function handleEventName(e) {
         localStorage.setItem("Event Name", e.target.value);
@@ -29,19 +26,23 @@ export default function EventDescription() {
     }
     console.log(localStorage)
 
-    let sendDataBackend = (formData, userId) => {
-        let dataToPass = {
-            googleId: userId,
-            festivalData: formData
-        }
-        axios.post('/saveFormData', dataToPass)
-        .then(function (response) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        })
-    }
+    //DO NOT DELETE THIS **ZARA - happy to discuss - this is 
+    // function handleSubmit() {
+    //     sendDataBackend(fakeData, userId);
+    // }
+    // let sendDataBackend = (formData, userId) => {
+    //     let dataToPass = {
+    //         googleId: userId,
+    //         festivalData: formData
+    //     }
+    //     axios.post('/saveFormData', dataToPass)
+    //     .then(function (response) {
+    //         console.log(response);
+    //     })
+    //     .catch(function (error) {
+    //         console.log(error);
+    //     })
+    // }
 
     return( 
         <>

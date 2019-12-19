@@ -46,9 +46,8 @@ export default class FaqBackend extends React.Component {
                         </div>
                     </div>
                     <div className="containerFaq">
-                        <button className="item">Save</button>
-                        <button className="item">Preview</button>
-                        <button className="item">Next</button>
+                        <a href='/dashboard/123' className="item">Save and return to dashboard</a>
+                        <a href='/PreviewSite' className="item">Save and continue</a>
                     </div>
                 </form>
 
