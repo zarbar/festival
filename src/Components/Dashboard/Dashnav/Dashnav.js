@@ -34,8 +34,7 @@ class DashNav extends React.Component {
 
                 <div className={this.state.menu} >
                     <div className='navMenu' id='menuShow'>
-                        <a className="menuItem topItem" href="/signup" onClick={() => { this.toggleMenu() }}>Sign up</a>
-                        <a className="menuItem" href="/login" onClick={() => { this.toggleMenu() }}>Login</a>
+                        <a className="menuItem topItem" href="/" onClick={() => { this.toggleMenu() }}>Logout</a>
                         <a className="menuItem" href="/about" onClick={() => { this.toggleMenu() }}>About</a>
                     </div>
                 </div>

@@ -11,20 +11,20 @@ export default class FaqBackend extends React.Component {
         this.state = { inputs: [] };
     }
 
-//     appendInput(e) {
-//         e.preventDefault()
-//         this.setState({ inputs: [...this.state.inputs, this.state.inputs.length + 1] },
-//             () => console.log(this.state)
-//         )
-//     }
+    //     appendInput(e) {
+    //         e.preventDefault()
+    //         this.setState({ inputs: [...this.state.inputs, this.state.inputs.length + 1] },
+    //             () => console.log(this.state)
+    //         )
+    //     }
 
-//     decreaseInput(e) {
-//         e.preventDefault()
-//         if (this.state.inputs.length > 0) {
-//             this.state.inputs.pop();
-//             this.setState(() => ({ inputs: this.state.inputs }));
-//         }
-//     }
+    //     decreaseInput(e) {
+    //         e.preventDefault()
+    //         if (this.state.inputs.length > 0) {
+    //             this.state.inputs.pop();
+    //             this.setState(() => ({ inputs: this.state.inputs }));
+    //         }
+    //     }
     handleFaq1(e) {
         localStorage.setItem("FAQ1", e.target.value)
     }
@@ -39,7 +39,7 @@ export default class FaqBackend extends React.Component {
     handleFaq2Answer(e) {
         localStorage.setItem("FAq2Answer", e.target.value)
     }
-    
+
 
     render() {
         return (
@@ -53,7 +53,7 @@ export default class FaqBackend extends React.Component {
                     <input type='text' id='faqinput' onChange={this.handleFaq1}></input>
 
                     <p className='FaqFieldType'>Answer:</p>
-                    <textarea type='text' id='faqtextarea'onChange={this.handleFaq1Answer}></textarea>
+                    <textarea type='text' id='faqtextarea' onChange={this.handleFaq1Answer}></textarea>
 
                     <p className='FaqFieldType'>Question:</p>
                     <input type='text' id='faqinput' onChange={this.handleFaq2}></input>
@@ -78,7 +78,7 @@ export default class FaqBackend extends React.Component {
                     </div>
                     <div className="containerFaq">
                         <a href='/dashboard/123' className="item">Save and return to dashboard</a>
-                        <a href='/PreviewSite' className="item">Save and continue</a>
+                        <a href='/contactForm' className="item">Save and continue</a>
                     </div>
                 </form>
 
