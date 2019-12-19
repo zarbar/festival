@@ -10,21 +10,11 @@ export default function EventDescription() {
     let [submit, setSubmit] = useState('')
     function handleSubmit() {
         setSubmit('Splendid, thank you!');
-        sendDataBackend(fakeData, userId);
     }
 
     function handleEventName(e) {
         localStorage.setItem("Event Name", e.target.value);
 
-    }
-    function handleStartDate(e) {
-        localStorage.setItem("Start Date", e.target.value)
-    }
-    function handleEndDate(e) {
-        localStorage.setItem("End date", e.target.value)
-    }
-    function handleEventName(e) {
-        localStorage.setItem("Event Name", e.target.value)
     }
     function handleStartDate(e) {
         localStorage.setItem("Start Date", e.target.value)
