@@ -62,8 +62,11 @@ input {
       width: 60%;
     }
     .buy-tickets .button {
-        width: 10em;
+        width: 30%;
         height: 3em;
+    }
+    .guest-info img {
+        height: 100vh;
     }
   }
 

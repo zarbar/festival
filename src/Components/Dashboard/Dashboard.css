@@ -1,5 +1,5 @@
 .dashboardPage {
-    height: 100vh;
+    height: auto;
 }
 
 #dashHeader {
@@ -19,6 +19,7 @@
     text-decoration: none;
     color: #474d69;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .dashboardContainer {
@@ -27,9 +28,6 @@
     background: rgb(235, 232, 232);
     height: 100vh;
     padding: 2%;
-
-    /* margin: 2%; */
-    /* box-shadow: 2px 2px 3px grey; */
 }
 
 .itemDash {
@@ -53,6 +51,7 @@
     border-radius: 5px;
     margin-top: 5%;
     box-shadow: 1px 1px 2px grey;
+    cursor: pointer;
 }
 
 .previewDash:hover {
