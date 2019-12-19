@@ -5,25 +5,24 @@ import concert from '../../../images/ticket/concert.jpg';
 import music from '../../../images/ticket/music.jpg';
 
 export default function TicketInfo() {
-    function handleTicketDescription(e) {
-      localStorage.setItem("Ticket Description", e.target.value)
-    }
-    function handleLink(e) {
-      localStorage.setItem("Ticket Provider", e.target.value)
-    }
-    function handleTicketText(e) {
-      localStorage.setItem("Ticket Text", e.target.value)
-    }
+
+  function handleTicketDescription(e) {
+    localStorage.setItem("Ticket Description", e.target.value)
+  }
+  function handleLink(e) {
+    localStorage.setItem("Ticket Provider", e.target.value)
+  }
+
   return (
     <div className='ticket'>
-      <h1>Ticket info</h1>
+      <h1>Step 2: Ticket info</h1>
       <form action="" id='ticketInfoForm'>
+
         <p>Add a ticket description</p>
         <textarea className="infoTextArea" type='text' placeholder='Ticket description' onChange={handleTicketDescription}></textarea>
         <p>Enter a link to your ticket provider</p>
         <textarea className="infoTextArea" type='text' placeholder='Link of your ticket' onChange={handleLink}></textarea>
-        <p>Text for ticket button</p>
-        <textarea className="infoTextArea" type='text' placeholder='Name your call to action' onChange={handleTicketText}></textarea>
+
         <p>Select your display image:</p>
         <div className='slide-photo'>
           <div className='img-item'>
@@ -40,13 +39,10 @@ export default function TicketInfo() {
           </div>
         </div>
         <div className="containerTicketInfo">
-                <button className="item">Save</button>
-                <button className="item">Preview</button>
-                <button className="item">Next</button>
-            </div>
+          <a href='/dashboard/123' className="item">Save and return to dashboard</a>
+          <a href='/PreviewSite' className="item">Save and continue</a>
+        </div>
       </form>
-
-
     </div>
   )
 

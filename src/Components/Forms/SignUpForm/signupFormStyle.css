@@ -1,3 +1,25 @@
 #signUpPageContent {
-    padding-top: 20vh;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
 }
+
+.login {
+    width: 50%;
+    margin: 1.5%;
+}
+.item {
+    width: 300px;
+}
+.account-anchor a {
+    width: 30%;
+}
+@media only screen and (max-width: 600px) {
+    .account-anchor a {
+        width: 25%;
+    }
+    .login {
+        width: 85%;
+    }
+  }

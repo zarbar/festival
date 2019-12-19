@@ -1,20 +1,16 @@
-import React, { useState } from 'react';
-// import {useParams} from 'react-router-dom';
+import React from 'react';
+import {useParams} from 'react-router-dom';
 import './basicInfo.css';
-import axios from 'axios';
+// import axios from 'axios';
 
 export default function EventDescription() {    
-    // let { userId } = useParams();
+    //DO NOT DELETE - this is for MONGODB
+    //let { userId } = useParams();
     // const fakeData = 'this is test data put here by Zara to test backend server - seems to be working which is awesome!';
 
-    let [submit, setSubmit] = useState('')
-    function handleSubmit() {
-        setSubmit('Splendid, thank you!');
-    }
 
     function handleEventName(e) {
         localStorage.setItem("Event Name", e.target.value);
-
     }
     function handleStartDate(e) {
         localStorage.setItem("Start Date", e.target.value)
@@ -29,9 +25,28 @@ export default function EventDescription() {
         localStorage.setItem("Blurb", e.target.value)
     }
     console.log(localStorage)
+
+    //DO NOT DELETE THIS **ZARA - happy to discuss - this is 
+    // function handleSubmit() {
+    //     sendDataBackend(fakeData, userId);
+    // }
+    // let sendDataBackend = (formData, userId) => {
+    //     let dataToPass = {
+    //         googleId: userId,
+    //         festivalData: formData
+    //     }
+    //     axios.post('/saveFormData', dataToPass)
+    //     .then(function (response) {
+    //         console.log(response);
+    //     })
+    //     .catch(function (error) {
+    //         console.log(error);
+    //     })
+    // }
+
     return( 
         <>
-        <h1>Tell us some more about your event!</h1>
+        <h1>Step 1: Basic </h1>
         <form id="eventDescriptionForm">
         <label>Festival name</label>
         <input type='text' placeholder="Enter the details of your event here. Explain what people can expect,
@@ -42,11 +57,9 @@ export default function EventDescription() {
         <label>Enter a short blurb about your festival: </label>
         <textarea className="eventDescriptiontextarea" placeholder="Hogsozzle is a perfoming arts and music festival known for its hog rost" onChange={handleBlurb}></textarea>
         <div className="containerBasicInfo">
-                <button onClick={handleSubmit} className="item">Save</button>
-                <button onClick={handleSubmit} className="item">Preview</button>
-                <button onClick={handleSubmit} className="item">Next</button>
+                <a href='/dashboard/123' className="item">Save and return to dashboard</a>
+                <a href='/PreviewSite' className="item">Save and continue</a>
             </div>
-            {submit}
         </form>
         </>
     )

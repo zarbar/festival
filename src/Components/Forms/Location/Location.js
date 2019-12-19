@@ -18,6 +18,7 @@ export default function Location() {
             <textarea placeholder="Eg. nearest aiports, train stations, taxis, parking, shuttle buses etc"></textarea>
       />
 
+
         </>
     )
 }

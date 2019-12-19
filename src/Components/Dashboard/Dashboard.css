@@ -1,5 +1,5 @@
 .dashboardPage {
-    height: 100vh;
+    height: auto;
 }
 
 #dashHeader {
@@ -15,10 +15,18 @@
     justify-content: space-around;
 }
 
+.icontitle {
+    padding-top: 12px;
+}
+
 .aDashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
     color: #474d69;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .dashboardContainer {
@@ -27,9 +35,6 @@
     background: rgb(235, 232, 232);
     height: 100vh;
     padding: 2%;
-
-    /* margin: 2%; */
-    /* box-shadow: 2px 2px 3px grey; */
 }
 
 .itemDash {
@@ -42,21 +47,22 @@
     background: lightgray;
     margin: 1%;
     width: 30%;
-    box-shadow: 2px 2px 3px grey;
+    box-shadow: 2px 2px 3px #0170b7;
 }
 
 .previewDash {
     font-family: englebert;
     color: #474d69;
     background-color: #ffcc03;
-    font-size: 2em;
-    border-radius: 5px;
-    margin-top: 5%;
     box-shadow: 1px 1px 2px grey;
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding: 0.7em;
 }
 
 .previewDash:hover {
-    background-color: #474d69;
+    background-color: #e6331c;
     color: lightgray;
 }
 
