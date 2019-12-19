@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ConnectWithUs.css';
 
 export default function ContactPage() {
+    const [submit, setSubmit] = useState('')
+    function handleSubmit() {
+        setSubmit('Splendid, thank you!');
+    }
 
     function socialMedia1Change(e) {
         localStorage.setItem('Social Media 1', e.target.value)
@@ -32,12 +36,11 @@ export default function ContactPage() {
                 <p>Add company address</p>
                 <textarea className='infoTextArea' type="text" id='connect' onChange={addressChange}></textarea>
                 <div className="containerEndButtons">
-                    <button className="item">Save</button>
-                    <button className="item">Preview</button>
-                    <button className="item">Next</button>
+                    <button onClick={handleSubmit} className="item">Save and return to dashboard</button>
+                    <button onClick={handleSubmit} className="item">Save and continue</button>
                 </div>
+                {submit}
             </form>
-
         </>
     )
 }
