@@ -1,24 +1,22 @@
-.connect, .subscribe {
-    color: antiquewhite;
-    background: black;
+#connectSectionPreview {
+    background-color: #0B132B;
+    color: #C4EBC8;
 }
 
-input {
-    width: 30%;
-    height: 2em;
-    font-size: 1.2em;
-    border-radius: 5px;
-    border-style: none;
-}
-.subscribe button {
-    background: #f5ac3e;
-    width: 7em;
-    height: 2em;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 700;
-}
 .festivalEmail {
     text-decoration: none;
-    color: #f5ac3e;
+    color: #7C9EB2;
+}
+
+.socialIcon {
+    height: 30px;
+    width: auto;
+    padding: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+    #emailIcon {
+        height: 20px;
+        width: auto;
+    }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import './FAQ.css'
+import question from './question.png';
 
 export default class Faq extends React.Component {
     constructor(props) {
@@ -14,13 +15,16 @@ export default class Faq extends React.Component {
 
     render() {
         return (
-            <>
+
+            <div className='previewSiteSectionBoxBasicInfo'>
+                <img src={question} alt='faq' className='previewSiteIcon' />
                 <h1>FAQ</h1>
                 <h2>{this.state.question1}</h2>
                 <p>{this.state.answer1}</p>
                 <h2>{this.state.question2}</h2>
                 <p>{this.state.answer2}</p>
-            </>
+            </div>
+
         )
     };
 }

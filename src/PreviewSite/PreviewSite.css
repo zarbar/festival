@@ -10,6 +10,7 @@
     height: auto;
     padding-bottom: 0;
 }
+
 .buy-tickets {
     background-color: black;
     color: antiquewhite;
@@ -26,18 +27,23 @@
     font-size: 20px;
     font-weight: 700;
 }
+
 .guest-info img {
     width: 100%;
     height: auto;
 }
+
 .guest-info iframe {
     width: 100%;
     height: auto;
 }
-.connect, .subscribe {
+
+.connect,
+.subscribe {
     color: antiquewhite;
     background: black;
 }
+
 input {
     width: 30%;
     height: 2em;
@@ -45,6 +51,7 @@ input {
     border-radius: 5px;
     border-style: none;
 }
+
 .subscribe button {
     background: #f5ac3e;
     width: 7em;
@@ -53,21 +60,44 @@ input {
     font-size: 20px;
     font-weight: 700;
 }
+
 .subscribe .email a {
     text-decoration: none;
     color: #f5ac3e;
 }
+
+.previewSiteSectionBoxBasicInfo {
+    padding: 3vh;
+    border-radius: 10px;
+    background: #C4EBC8;
+    font: #202A25;
+    margin: 1vh;
+}
+
+.previewSiteIcon {
+    height: 60px;
+    width: auto;
+}
+
+
+
 @media only screen and (max-width: 600px) {
     input {
-      width: 60%;
+        width: 60%;
     }
+
     .buy-tickets .button {
         width: 30%;
         height: 3em;
     }
+
     .guest-info img {
         height: 100vh;
     }
-  }
 
+    .previewSiteIcon {
+        height: 40px;
+        width: auto;
+    }
 
+}

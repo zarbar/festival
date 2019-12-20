@@ -1,5 +1,6 @@
 import React from 'react';
 import './Tickets.css';
+import ticketPic from './ticketicon.png';
 
 export default class Tickets extends React.Component {
     constructor(props) {
@@ -12,7 +13,8 @@ export default class Tickets extends React.Component {
 
     render() {
         return (
-            <div className='buy-tickets'>
+            <div className='previewSiteSectionBoxBasicInfo' id='buy-tickets'>
+                <img src={ticketPic} alt='ticket' className='previewSiteIcon' />
                 <p>{this.state.ticketDes}</p>
                 <button className='btn'>
                     <a href={this.state.ticketLink}>Buy Tickets</a>

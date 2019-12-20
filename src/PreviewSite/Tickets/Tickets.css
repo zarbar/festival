@@ -1,23 +1,27 @@
-.buy-tickets {
-    background-color: black;
+#buy-tickets {
+    background-color: #0B132B;
     color: antiquewhite;
-    width: 100%;
-}
-.buy-tickets img {
-    width: 100%;
-    height: 100vh;
 }
 
+
 .btn {
-    background: #3eeaf5;
-    width: 20em;
-    height: 4em;
+    background: #52528C;
+    /* width: 20em;
+    height: 4em; */
     border-radius: 10px;
     font-size: 20px;
     font-weight: 700;
-    margin: 1%;
+    /* margin: 1%; */
     cursor: pointer;
+    font: #0B132B;
+    padding: 1vh;
 }
+
+.btn a {
+    text-decoration: none;
+    color: #C4EBC8;
+}
+
 @media only screen and (max-width: 600px) {
     .buy-tickets .btn {
         width: 80%;
@@ -26,7 +30,5 @@
         font-weight: 700;
         margin: 2%;
     }
-    .buy-tickets img {
-        height: auto;
-    }
-  }
+
+}

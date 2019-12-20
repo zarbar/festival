@@ -1,5 +1,6 @@
 import React from 'react'
-import './FestivalInfo.css'
+import './FestivalInfo.css';
+import info from './iconinfo.png';
 
 export default class FestivalInfo extends React.Component {
 
@@ -19,9 +20,13 @@ export default class FestivalInfo extends React.Component {
         return (
             <>
                 <h1>{this.state.festivalName}</h1>
-                <p className='previewsiteblurb'>{this.state.blurb}</p>
-                <p className='previewsiteblurb'>{this.state.location}</p>
-                <p className='previewsiteblurb'>{this.state.startDate} - {this.state.endDate}</p>
+                <div className='previewSiteSectionBoxBasicInfo'>
+                    <img className='previewSiteIcon' src={info} alt='infoIcon' />
+                    <p className='previewsiteblurb'>{this.state.location}</p>
+                    <p className='previewsiteblurb'>{this.state.blurb}</p>
+
+                    <p className='previewsiteblurb'>{this.state.startDate} - {this.state.endDate}</p>
+                </div>
             </>
         )
     };

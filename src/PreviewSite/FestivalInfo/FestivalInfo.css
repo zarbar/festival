@@ -2,7 +2,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    border: 5px solid red;
+    border: 5px dotted #0B132B;
 }
 
 .previewsiteblurb {
