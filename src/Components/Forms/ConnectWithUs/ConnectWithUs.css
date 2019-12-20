@@ -27,7 +27,7 @@
 
 .infoTextArea {
     width: 60%;
-    height: 40%;
+    height: auto;
     border-radius: 10px;
     font-family: dosis;
     margin: .5% 0;
@@ -43,9 +43,15 @@
     width: 80%;
 }
 
-textarea {
-    width: 100%;
-    height: 40%;
-    border-radius: 10px;
-    border: 2px solid rgb(218, 65, 96);
+@media only screen and (max-width: 600px) {
+    .containerEndButtons {
+        display: flex;
+        flex-direction: column;
+    }
+    .connectForm {
+        width: 94%;
+        margin: 2%;
+    }
+  }
+
 }

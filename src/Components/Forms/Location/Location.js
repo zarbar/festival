@@ -18,6 +18,7 @@ export default function Location() {
     }
 
     return (
+
         <div className='locationFormPage'>
             <h1>Step 3: Location</h1>
             <form id='locationInfoForm'>
