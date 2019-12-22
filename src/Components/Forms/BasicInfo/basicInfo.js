@@ -3,8 +3,9 @@ import React from 'react';
 // import {useParams} from 'react-router-dom';;
 import './basicInfo.css';
 // import axios from 'axios';
+import { Form, Button } from 'react-bootstrap';
 
-export default function EventDescription() {    
+export default function EventDescription() {
     //DO NOT DELETE - this is for MONGODB
     //let { userId } = useParams();
     // const fakeData = 'this is test data put here by Zara to test backend server - seems to be working which is awesome!';
@@ -45,28 +46,43 @@ export default function EventDescription() {
     //     })
     // }
 
-    return( 
-        <>
-        <h1>Step 1: Basic </h1>
-        <form id="eventDescriptionForm">
-        <label>Festival name</label>
-        <input className="startDate" type='text' placeholder="Enter the details of your event here. Explain what people can expect,
-        and why they should be there"
-        onChange={handleEventName}
-        ></input>
-        <label>Start Date:</label><input className="startDate" type="date" onChange={handleStartDate}/>
-        <label>End Date:</label><input className="startDate" type="date" onChange={handleEndDate}/>
-        <label>Location: </label><input className="startDate" type="string" placeholder="Sofia, Bulgaria" onChange={handleLocation}/>
-        <label>Enter your festival description: </label>
-        <textarea className="eventDescriptiontextarea" placeholder="Hogsozzle is a perfoming arts and music festival known for its hog rost" onChange={handleBlurb}></textarea>
+    return (
+        <div className='formPageMargin'>
+            <h1 >Step 1: Basic Details </h1>
+            <Form className="formPageDashboard">
+                <Form.Group>
+                    <Form.Label>Festival Name</Form.Label >
+                    <Form.Control type="text" placeholder="festival name" onChange={handleEventName} />
+                </Form.Group>
 
-        <div className="buttonBoxForms">
-                <a href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
-                <a href='/ticketInfoForm' className="buttonBoxFormButton">Save and continue</a>
+                <Form.Group>
+                    <Form.Label>Start Date</Form.Label>
+                    <Form.Control type="date" placeholder="Starting Date" onChange={handleStartDate} />
+                </Form.Group>
+
+                <Form.Group>
+                    <Form.Label>End Date</Form.Label>
+                    <Form.Control type="date" placeholder="End Date" onChange={handleEndDate} />
+                </Form.Group>
+
+                <Form.Group>
+                    <Form.Label>General Location</Form.Label>
+                    <Form.Control type="text" placeholder="London, England" onChange={handleLocation} />
+                </Form.Group>
+
+                <Form.Group>
+                    <Form.Label>Festival Description</Form.Label>
+                    <Form.Control as="textarea" rows="5" onChange={handleBlurb} />
+                </Form.Group>
+
+                <Button variant="primary" size="lg" block>
+                    <a href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
+                </Button>
+
+                <Button variant="primary" size="lg" block>
+                    <a href='/ticketInfoForm' className="buttonBoxFormButton">Save and continue</a>
+                </Button>
+            </Form>
         </div>
-        <br/>
-        </form>
-        <br/>
-        </>
     )
 }

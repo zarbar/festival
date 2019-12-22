@@ -1,45 +1,9 @@
-.tell-us-more {
-    width: 100%;
-    text-align: center;
-    display: grid;
-    grid-template-rows: 100px auto;
-    padding-bottom: 1%;
-    position: relative;
+.formPageDashboard {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: left;
 }
 
-.tell-us-more #eventDescriptionForm {
-    padding: 1em;
-    width: 80%;
-    position: absolute;
-    top: 100%;
-    left: -15%;
-    background-color: rgb(231, 231, 231);
-}
-
-.startDate {
-    width: 60%;
-    margin: 1.5%;
-}
-
-.eventDescriptiontextarea {
-    font-family: dosis;
-    height: 15%;
-}
-
-
-@media only screen and (max-width: 600px) {
-    .tell-us-more #eventDescriptionForm {
-        padding: .5em;
-        width: 80%;
-        position: absolute;
-        top: 150%;
-        left: -20%;
-    }
-
-    .startDate {
-        width: 80%;
-        margin: 2%;
-    }
-
-
+.formPageMargin {
+    margin: 1%;
 }

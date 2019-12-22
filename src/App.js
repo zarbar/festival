@@ -15,6 +15,7 @@ import FaqForm from './Components/Forms/FaqForm/FaqForm';
 import TicketInfo from './Components/Forms/TicketInfo/TicketInfo';
 import LocationForm from './Components/Forms/Location/Location';
 import DashNav from './Components/Dashboard/Dashnav/Dashnav';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   render() {
