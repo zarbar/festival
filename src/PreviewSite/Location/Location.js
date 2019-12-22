@@ -2,6 +2,7 @@ import React from 'react'
 import './Location.css'
 import mapicon from './mapicon.png';
 
+
 export default class Location extends React.Component {
     constructor(props) {
         super(props)

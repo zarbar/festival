@@ -1,5 +1,5 @@
 import React from 'react';
-import './TicketInfo.css';
+import { Form, Button } from 'react-bootstrap';
 
 
 export default function TicketInfo() {
@@ -12,21 +12,30 @@ export default function TicketInfo() {
   }
 
   return (
-    <div className='ticket'>
-      <h1>Step 2: Ticket info</h1>
-      <form action="" id='ticketInfoForm'>
+    <div className='formPageMargin'>
+      <h1 >Step 2: Ticket info</h1>
+      <Form className="formPageDashboard">
+        <Form.Group>
+          <Form.Label>Ticket Description</Form.Label>
+          <Form.Control as="textarea" rows="3" onChange={handleTicketDescription} placeholder="Number of tickets available..." />
+        </Form.Group>
 
-        <p>Add a ticket description</p>
-        <textarea className="infoTextArea" type='text' placeholder='Ticket description' onChange={handleTicketDescription}></textarea>
-        <p>Enter a link to your ticket provider</p>
 
-        <textarea className="infoTextArea" type='text' placeholder='Link of your ticket' onChange={ticketLink}></textarea>
+        <Form.Group>
+          <Form.Label>Enter a link to your ticket provider</Form.Label>
+          <Form.Control type="text" placeholder="London, England" onChange={ticketLink} />
+        </Form.Group>
 
-        <div className="buttonBoxForms">
+
+
+        <Button variant="primary" size="lg" block>
           <a href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
-          <a href='/location' className="buttonBoxFormButton">Save and continue</a>
-        </div>
-      </form>
+        </Button>
+
+        <Button variant="primary" size="lg" block>
+          <a href='/ticketInfoForm' className="buttonBoxFormButton">Save and continue</a>
+        </Button>
+      </Form>
     </div>
   )
 

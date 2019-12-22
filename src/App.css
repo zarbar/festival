@@ -26,3 +26,13 @@ h2 {
 h1 {
   font-family: 'Englebert', sans-serif;
 }
+
+.formPageDashboard {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  text-align: left;
+}
+
+.formPageMargin {
+  margin: 1%;
+}

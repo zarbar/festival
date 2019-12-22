@@ -1,5 +1,5 @@
 import React from 'react';
-import './location.css';
+import { Form, Button } from 'react-bootstrap';
 
 export default function Location() {
 
@@ -19,25 +19,30 @@ export default function Location() {
 
     return (
 
-        <div className='locationFormPage'>
-            <h1>Step 3: Location</h1>
-            <form id='locationInfoForm'>
-                <p>Add full event location: </p>
+        <div className='formPageMargin'>
+            <h1 >Step 3: Location</h1>
+            <Form className="formPageDashboard">
 
-                <input className='addressLineInput' type="text" onChange={handleAddressLineOne} placeholder='Address Line 1' />
+                <Form.Group>
+                    <Form.Label>Full Event Location</Form.Label >
+                    <Form.Control type="text" placeholder="Address Line 1" onChange={handleAddressLineOne} />
+                    <Form.Control type="text" placeholder="Address Line 2" onChange={handleAddressLineTwo} />
+                    <Form.Control type="text" placeholder="Address Line 3" onChange={handleAddressLineThree} />
+                </Form.Group>
 
-                <input className='addressLineInput' type="text" onChange={handleAddressLineTwo}
-                    placeholder='Address Line 2' />
+                <Form.Group>
+                    <Form.Label>Details about getting to your venue</Form.Label>
+                    <Form.Control as="textarea" rows="3" onChange={accessDetails} />
+                </Form.Group>
 
-                <input className='addressLineInput' type="text" onChange={handleAddressLineThree} placeholder='Address Line 3' />
-
-                <p>Add details about getting to your venue: <br /></p>
-                <textarea className="infoTextArea" type="text" onChange={accessDetails} placeholder="Eg. nearest aiports, train stations, taxis, parking, shuttle buses etc" />
-                <div className="buttonBoxForms">
+                <Button variant="primary" size="lg" block>
                     <a href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
-                    <a href='/faqForm' className="buttonBoxFormButton">Save and continue</a>
-                </div>
-            </form>
+                </Button>
+
+                <Button variant="primary" size="lg" block>
+                    <a href='/ticketInfoForm' className="buttonBoxFormButton">Save and continue</a>
+                </Button>
+            </Form>
         </div>
     )
 }

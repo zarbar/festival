@@ -1,7 +1,6 @@
 
 import React from 'react';
 // import {useParams} from 'react-router-dom';;
-import './basicInfo.css';
 // import axios from 'axios';
 import { Form, Button } from 'react-bootstrap';
 
