@@ -19,9 +19,10 @@ export default class FestivalInfo extends React.Component {
     render() {
         return (
             <>
-                <h1>{this.state.festivalName}</h1>
+                <h1 id='mainPreviewTitle'>{this.state.festivalName}</h1>
                 <div className='previewSiteSectionBoxBasicInfo'>
                     <img className='previewSiteIcon' src={info} alt='infoIcon' />
+                    <h1>Details</h1>
                     <p className='previewsiteblurb'>{this.state.location}</p>
                     <p className='previewsiteblurb'>{this.state.blurb}</p>
 

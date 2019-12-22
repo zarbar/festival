@@ -28,11 +28,16 @@ h1 {
 }
 
 .formPageDashboard {
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding: 5vh 10vw;
   text-align: left;
+  background: #F6F6F6;
+  border-radius: 5px;
 }
 
 .formPageMargin {
   margin: 1%;
+}
+
+.buttonBoxFormButton {
+  color: white;
 }

@@ -15,6 +15,7 @@ export default class Tickets extends React.Component {
         return (
             <div className='previewSiteSectionBoxBasicInfo' id='buy-tickets'>
                 <img src={ticketPic} alt='ticket' className='previewSiteIcon' />
+                <h1>Ticket Info</h1>
                 <p>{this.state.ticketDes}</p>
                 <button className='btn'>
                     <a href={this.state.ticketLink}>Buy Tickets</a>

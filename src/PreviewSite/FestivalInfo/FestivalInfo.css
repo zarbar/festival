@@ -16,3 +16,8 @@
     height: auto;
     padding-bottom: 0;
 }
+
+#mainPreviewTitle {
+    padding: 2%;
+    font-weight: 800;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './ConnectWithUs.css';
+import { Form, Button } from 'react-bootstrap';
 
 export default function ContactPage() {
     function socialMedia1Change(e) {
@@ -14,23 +14,37 @@ export default function ContactPage() {
     }
 
     return (
-        <>
+
+        <div className='formPageMargin'>
             <h1>Step 5 - Connect with us</h1>
-            <form className='connectForm'>
-                <p>Social media link</p>
-                <textarea className='infoTextArea' type="text" id='connect' onChange={socialMedia1Change}></textarea>
+            <Form className="formPageDashboard">
+                <Form.Group>
+                    <Form.Label>Social media link</Form.Label>
+                    <Form.Control type="text" onChange={socialMedia1Change}>
+                    </Form.Control>
+                </Form.Group>
 
-                <p>Add contact email </p>
-                <textarea className='infoTextArea' type="email" id='connect' onChange={emailChange}></textarea>
-                <p>Add company address</p>
-                <textarea className='infoTextArea' type="text" id='connect' onChange={addressChange}></textarea>
+                <Form.Group>
+                    <Form.Label>Contact email </Form.Label>
+                    <Form.Control type="email" id='connect' onChange={emailChange}>
+                    </Form.Control>
+                </Form.Group>
 
-                <div className="buttonBoxForms">
+                <Form.Group>
+                    <Form.Label>Add company address</Form.Label>
+                    <Form.Control className='infoTextArea' type="text" id='connect' onChange={addressChange} />
+                </Form.Group>
+
+                <Button variant="primary" size="lg" block>
                     <a href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
-                    <a href='/PreviewSite' target="_blank" rel="noopener noreferrer" className="buttonBoxFormButton">Publish my site</a>
-                </div>
-            </form>
-        </>
+                </Button>
+
+                <Button variant="primary" size="lg" block>
+                    <a href='/PreviewSite' target="_blank" rel="noopener noreferrer" className="buttonBoxFormButton">Publish site</a>
+                </Button>
+
+            </Form>
+        </div>
     )
 }
 

@@ -40,7 +40,7 @@ export default function Location() {
                 </Button>
 
                 <Button variant="primary" size="lg" block>
-                    <a href='/ticketInfoForm' className="buttonBoxFormButton">Save and continue</a>
+                    <a href='/faqForm' className="buttonBoxFormButton">Save and continue</a>
                 </Button>
             </Form>
         </div>

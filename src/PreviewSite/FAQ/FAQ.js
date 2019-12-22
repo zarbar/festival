@@ -18,7 +18,7 @@ export default class Faq extends React.Component {
 
             <div className='previewSiteSectionBoxBasicInfo'>
                 <img src={question} alt='faq' className='previewSiteIcon' />
-                <h1>FAQ</h1>
+                <h1>FAQs</h1>
                 <h2>{this.state.question1}</h2>
                 <p>{this.state.answer1}</p>
                 <h2>{this.state.question2}</h2>
