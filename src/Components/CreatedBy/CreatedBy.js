@@ -43,8 +43,6 @@ export default function CreatedBy() {
                         })}
                     </Row>
                 </Container>
-
-
             </div>
         </>
     )

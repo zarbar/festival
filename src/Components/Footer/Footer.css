@@ -18,6 +18,7 @@ footer .footer-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 footer .footer-nav p {
@@ -29,8 +30,14 @@ footer .footer-nav p {
     background: #474D69;
     padding-bottom: .2em;
     padding-top: .2em;
+
 }
 
 .footer-end p {
     color: antiquewhite;
+}
+
+#logo1 {
+    height: 100px;
+    width: auto;
 }
