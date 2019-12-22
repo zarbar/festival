@@ -13,7 +13,7 @@ export default function TicketInfo() {
 
   return (
     <div className='formPageMargin'>
-      <h1 >Step 2: Ticket info</h1>
+      <h1 className='formTitle'>Step 2: Ticket info</h1>
       <Form className="formPageDashboard">
         <Form.Group>
           <Form.Label>Ticket Description</Form.Label>
@@ -28,11 +28,11 @@ export default function TicketInfo() {
 
 
 
-        <Button variant="primary" size="lg" block>
-          <a href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
+        <Button variant="secondary" size="lg" block>
+          <a className='buttonAnchor' href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
         </Button>
 
-        <Button variant="primary" size="lg" block>
+        <Button variant="secondary" size="lg" block>
           <a href='/location' className="buttonBoxFormButton">Save and continue</a>
         </Button>
       </Form>

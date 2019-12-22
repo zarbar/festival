@@ -16,7 +16,7 @@ export default function ContactPage() {
     return (
 
         <div className='formPageMargin'>
-            <h1>Step 5 - Connect with us</h1>
+            <h1 className='formTitle'>Step 5 - Connect with us</h1>
             <Form className="formPageDashboard">
                 <Form.Group>
                     <Form.Label>Social media link</Form.Label>
@@ -35,11 +35,11 @@ export default function ContactPage() {
                     <Form.Control className='infoTextArea' type="text" id='connect' onChange={addressChange} />
                 </Form.Group>
 
-                <Button variant="primary" size="lg" block>
+                <Button variant="secondary" size="lg" block>
                     <a href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
                 </Button>
 
-                <Button variant="primary" size="lg" block>
+                <Button variant="secondary" size="lg" block>
                     <a href='/PreviewSite' target="_blank" rel="noopener noreferrer" className="buttonBoxFormButton">Publish site</a>
                 </Button>
 

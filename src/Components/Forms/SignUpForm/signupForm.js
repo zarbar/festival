@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import GoogleLoginButton from '../../GoogleLogin/GoogleLoginButton';
 import './signupFormStyle.css';
+import { Form, Button } from 'react-bootstrap';
 
 export default function SignUp() {
     let [festivalName, setFestivalName] = useState('');
@@ -26,19 +27,40 @@ export default function SignUp() {
                 {festivalName}
                 <br />
                 <GoogleLoginButton text="Sign Up with Google" />
-                <p id="or"><span>or</span></p>
+                <p id="or">or</p>
                 <p>sign up with your email address:</p>
-                <form id='loginForm'>
-                    <input className='loginClass' type="text" placeholder="User name" required onChange={userNameChange} />
-                    <input className='loginClass' type="text" placeholder="Festival name" required onChange={handleNameChange} />
-                    <input className='loginClass' type="text" placeholder="Email" required onChange={userEmailChange} />
-                    <input className='loginClass' type="password" placeholder="Password" required onChange={userPassword} />
-                </form><br/>
 
-                <div className="container">
-                    <a href='/dashboard/testuser'><button className="item">Create Account</button></a>
-                    <a className='account-anchor' href="/login"><button className="item">Already have an account?</button></a>
+                <Form id='loginForm'>
+                    <Form.Group>
+                        <Form.Control type="text" placeholder="User name" required onChange={userNameChange} />
+                    </Form.Group>
+
+                    <Form.Group>
+                        <Form.Control type="text" placeholder="Festival name" required onChange={handleNameChange} />
+                    </Form.Group>
+
+                    <Form.Group>
+                        <Form.Control type="email" placeholder="Email" required onChange={userEmailChange} />
+                    </Form.Group>
+
+                    <Form.Group>
+                        <Form.Control type="password" placeholder="Password" required onChange={userPassword} />
+                    </Form.Group>
+                </Form>
+
+                <div className='loginButtonContainer'>
+                    <a href='/dashboard/testuser' className='logButton'>
+                        <Button>
+                            Create Account
+                    </Button>
+                    </a>
+                    <a className='account-anchor' href="/login" className='logButton'>
+                        <Button variant="warning">
+                            Already have an account?
+                </Button>
+                    </a>
                 </div>
+
             </main>
         </>
     )

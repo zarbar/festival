@@ -25,8 +25,8 @@ export default class FaqBackend extends React.Component {
     render() {
         return (
             <div className='formPageMargin'>
-                <h1 >Step 4: FAQs</h1>
-                <h2>Please add your frequently asked questions for attendees</h2>
+                <h1 className='formTitle'>Step 4: FAQs</h1>
+                <h2 className='formTitle'>Please add your frequently asked questions for attendees</h2>
 
                 <Form className="formPageDashboard">
 
@@ -44,11 +44,12 @@ export default class FaqBackend extends React.Component {
 
 
 
-                    <Button variant="primary" size="lg" block>
-                        <a href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
+                    <Button variant="secondary" size="lg" block>
+                        <a href='/dashboard/123' className="buttonBoxFormButton">
+                        Save and return to dashboard</a>
                     </Button>
 
-                    <Button variant="primary" size="lg" block>
+                    <Button variant="secondary" size="lg" block>
                         <a href='/contactForm' className="buttonBoxFormButton">Save and continue</a>
                     </Button>
                 </Form>

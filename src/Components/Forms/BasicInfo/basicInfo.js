@@ -47,7 +47,7 @@ export default function EventDescription() {
 
     return (
         <div className='formPageMargin'>
-            <h1 >Step 1: Basic Details </h1>
+            <h1 className='formTitle'>Step 1: Basic Details </h1>
             <Form className="formPageDashboard">
                 <Form.Group>
                     <Form.Label>Festival Name</Form.Label >
@@ -74,11 +74,11 @@ export default function EventDescription() {
                     <Form.Control as="textarea" rows="5" onChange={handleBlurb} />
                 </Form.Group>
 
-                <Button variant="primary" size="lg" block>
+                <Button variant="secondary" size="lg" block>
                     <a href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
                 </Button>
 
-                <Button variant="primary" size="lg" block>
+                <Button variant="secondary" size="lg" block>
                     <a href='/ticketInfoForm' className="buttonBoxFormButton">Save and continue</a>
                 </Button>
             </Form>
