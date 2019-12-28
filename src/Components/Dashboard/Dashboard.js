@@ -80,9 +80,9 @@ export default function Dashboard() {
                 <div className='buttonContainer'>
                     {dashboardComponents()}
                 </div>
-                <a href='/PreviewSite' className='aDashboard' target="_blank" rel="noopener noreferrer">
-                    <button className='previewDash'>Preview my site</button>
-                </a>
+
+                <button className='previewDash'><a href='/PreviewSite' id='previewSiteButton' target="_blank" rel="noopener noreferrer">Preview my site</a></button>
+
             </div>
         </>
     );
