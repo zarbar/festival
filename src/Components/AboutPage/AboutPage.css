@@ -3,10 +3,6 @@
   color: antiquewhite;
   padding-top: 15vh;
   padding-bottom: 1em;
-}
-
-.about p,
-h1 {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }

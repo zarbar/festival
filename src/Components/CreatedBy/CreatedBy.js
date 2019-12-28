@@ -6,7 +6,6 @@ import chris from './avatars/chris.png';
 import clarissa from './avatars/clarissa.png';
 import mum from './avatars/mum.png';
 import zara from './avatars/zara.png';
-import { Container, Row, Col } from 'react-bootstrap';
 
 export default function CreatedBy() {
 

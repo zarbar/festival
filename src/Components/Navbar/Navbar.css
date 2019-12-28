@@ -1,7 +1,6 @@
 .navbarBody {
     position: fixed;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     background-color: rgb(0, 0, 0);
@@ -11,8 +10,25 @@
     margin-top: 0;
 }
 
-.navarbarItem {
+.navbarItem {
     flex: 1;
+    margin: 1vw;
+}
+
+.navbarItem2 {
+    flex: 2;
+    margin: 1vw;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .navbarItem2 {
+        flex: 1;
+    }
+
+    #navbarLogo {
+        width: 150px;
+    }
 }
 
 #opacityOn {
