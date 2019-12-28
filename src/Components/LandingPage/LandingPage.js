@@ -1,8 +1,6 @@
 import React from 'react';
 import './LandingPage.css';
 import AboutPage from '../AboutPage/AboutPage';
-import Footer from '../Footer/Footer';
-
 
 class LandingPage extends React.Component {
     render() {
@@ -23,7 +21,6 @@ class LandingPage extends React.Component {
                 </main>
 
                 < AboutPage />
-                <Footer />
             </>
         )
     }

@@ -35,11 +35,13 @@ export default function LoginForm() {
                     </Button>
                 </a>
                 <em id='dontHaveYet'>Don't have an account yet?</em>
+
                 <a href="/signup">
                     <Button variant="warning">
                         Create New Account
-                    </Button>
+                </Button>
                 </a>
+
             </div>
         </main>
     )

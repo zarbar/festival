@@ -33,6 +33,12 @@
     font-size: 25px;
 }
 
+#createNewAccountButton {
+    background-color: #ffcc00;
+    padding: 2vh;
+
+}
+
 
 #loginFormMain {
     position: absolute;
