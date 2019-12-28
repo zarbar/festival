@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutPage.css';
 import CreatedBy from '../CreatedBy/CreatedBy';
+import Footer from '../Footer/Footer';
 
 class AboutPage extends React.Component {
 
@@ -17,6 +18,7 @@ class AboutPage extends React.Component {
             </p>
                 </div>
                 <CreatedBy />
+                <Footer />
             </>
         )
     }
