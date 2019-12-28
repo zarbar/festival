@@ -26,3 +26,24 @@ h2 {
 h1 {
   font-family: 'Englebert', sans-serif;
 }
+
+.formPageDashboard {
+  padding: 5vh 10vw;
+  text-align: left;
+  background: #F6F6F6;
+  border-radius: 5px;
+  border: #474d69 1px solid;
+}
+
+.formPageMargin {
+  margin: 1%;
+}
+
+.buttonBoxFormButton:hover {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.formTitle {
+  color: #474d69;
+}

@@ -1,26 +1,33 @@
 import React from 'react'
-import './FestivalInfo.css'
+import './FestivalInfo.css';
+import info from './iconinfo.png';
 
 export default class FestivalInfo extends React.Component {
+
     constructor(props) {
         super(props)
         this.state = {
-            festivalName: 'Hogsozzle Festival',
-            blurb: 'Performing arts and music festival',
-            location: 'Sofia, Bulgaria',
+            festivalName: localStorage.getItem("Event Name"),
+            blurb: localStorage.getItem("Blurb"),
+            location: localStorage.getItem("Location"),
             eventDescription: '',
-            startDate: '04 Jun 2021',
-            endDate: '07 Jun 2021'
+            startDate: localStorage.getItem("Start Date"),
+            endDate: localStorage.getItem("End date")
 
         }
     }
     render() {
         return (
             <>
-                <h1>{this.state.festivalName}</h1>
-                <p>{this.state.blurb}</p>
-                <p>{this.state.location}</p>
-                <p>{this.state.startDate} - {this.state.endDate}</p>
+                <h1 id='mainPreviewTitle'>{this.state.festivalName}</h1>
+                <div className='previewSiteSectionBoxBasicInfo'>
+                    <img className='previewSiteIcon' src={info} alt='infoIcon' />
+                    <h1>Details</h1>
+                    <p className='previewsiteblurb'>{this.state.location}</p>
+                    <p className='previewsiteblurb'>{this.state.blurb}</p>
+
+                    <p className='previewsiteblurb'>{this.state.startDate} - {this.state.endDate}</p>
+                </div>
             </>
         )
     };

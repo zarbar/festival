@@ -5,24 +5,27 @@ import faq from './icons/FAQ.png';
 import info from './icons/info.png';
 import location from './icons/location.png';
 import ticket from './icons/ticket.png';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
 
 let dashboardItems = [
+    {
+        id: 'info',
+        link: '/basicInfo',
+        title: 'Info',
+        icon: info,
+    },
+    {
+        id: 'ticket',
+        link: '/ticketInfoForm',
+        title: 'Tickets',
+        icon: ticket,
+    },
     {
         id: 'location',
         link: '/location',
         title: 'Location',
         icon: location,
-    }, {
-        id: 'info',
-        link: '/basicInfo',
-        title: 'Basic Info',
-        icon: info,
-    },
-    {
-        id: 'contact',
-        link: '/contactForm',
-        title: 'Contact',
-        icon: contact,
     },
     {
         id: 'FAQ',
@@ -31,52 +34,56 @@ let dashboardItems = [
         icon: faq,
     },
     {
-        id: 'ticket',
-        link: '/ticketInfoForm',
-        title: 'Tickets',
-        icon: ticket,
+        id: 'contact',
+        link: '/contactForm',
+        title: 'Contact',
+        icon: contact,
     },
 ];
 
-class Dashboard extends React.Component {
-    constructor() {
-        super();
-        this.state = {
+export default function Dashboard() {
+    const { userId } = useParams();
 
-        };
-    }
+    React.useEffect((userId) => {
+        if (userId !== '123') {
+            axios.get('/userData')
+                .then(function (response) {
+                    console.log(response);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        }
 
-    dashboardComponents = () => {
+    }, [userId])
+
+    let dashboardComponents = () => {
         return dashboardItems.map(({ id, link, title, icon }) => {
             return (
                 <div className='itemDash' key={icon}>
                     <a href={link} className='aDashboard'>
                         <img src={icon} alt={id} className='dashboardIcon' />
-                        {title}
+                        <div className='icontitle' /> {title}
                     </a>
                 </div>
+
             )
         })
     }
 
-    render() {
-        return (
-            <>
-
-                <div className='dashboardContainer'>
-                    <span id="dashHeader">Welcome UserName</span>
-                    <div className='buttonContainer'>
-                        {this.dashboardComponents()}
-                    </div>
-                    <a href='/PreviewSite' className='aDashboard'>
-                        <button className='previewDash'>Preview my site
-                            </button>
-                    </a>
+    return (
+        <>
+            <div className='dashboardContainer'>
+                <span id="dashHeader">
+                    Welcome {localStorage.getItem('userName')}!
+                    </span>
+                <div className='buttonContainer'>
+                    {dashboardComponents()}
                 </div>
 
-            </>
-        );
-    }
-}
+                <button className='previewDash'><a href='/PreviewSite' id='previewSiteButton' target="_blank" rel="noopener noreferrer">Preview my site</a></button>
 
-export default Dashboard;
+            </div>
+        </>
+    );
+}

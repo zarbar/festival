@@ -1,28 +1,26 @@
 import React from 'react';
 import './Tickets.css';
-import festival from '../../images/ticket/festival1.jpg';
-import concert from '../../images/ticket/concert.jpg';
-import music from '../../images/ticket/music.jpg';
+import ticketPic from './ticketicon.png';
 
 export default class Tickets extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            ticketDes: 'Super early bird passes on sale now. Get your ticket to Bulgaria’s hottest summer party.',
-            ticketLink: '/',
-            imgSrc1: festival,
-            imgSrc2: concert,
-            imgSrc3: music
+            ticketDes: localStorage.getItem("Ticket Description"),
+            ticketLink: "https://" + localStorage.getItem("Ticket Link"),
         }
     }
 
     render() {
         return (
-            <div className='buy-tickets'>
+            <div className='previewSiteSectionBoxBasicInfo' id='buy-tickets'>
+                <img src={ticketPic} alt='ticket' className='previewSiteIcon' />
+                <h1>Ticket Info</h1>
                 <p>{this.state.ticketDes}</p>
-                <button className='button'
-                ><a href={this.state.ticketLink}>Buy Tickets</a></button>
-                <img src={this.state.imgSrc1} alt='your' />
+                <button className='btn'>
+                    <a href={this.state.ticketLink}>Buy Tickets</a>
+                </button>
+
             </div>
         );
     }

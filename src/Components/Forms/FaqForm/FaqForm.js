@@ -1,9 +1,5 @@
 import React from 'react';
-import './FaqForm.css';
-import './generalFormStyle.css'
-import faq1 from '../../../images/faqImages/faq1.jpg'
-import faq2 from '../../../images/faqImages/faq2.jpg'
-import faq3 from '../../../images/faqImages/faq3.jpg'
+import { Form, Button } from 'react-bootstrap';
 
 export default class FaqBackend extends React.Component {
     constructor(props) {
@@ -11,81 +7,53 @@ export default class FaqBackend extends React.Component {
         this.state = { inputs: [] };
     }
 
-    appendInput(e) {
-        e.preventDefault()
-        this.setState({ inputs: [...this.state.inputs, this.state.inputs.length + 1] },
-            () => console.log(this.state)
-        )
+    handleFaq1(e) {
+        localStorage.setItem("FAQ1", e.target.value)
+    }
+    handleFaq1Answer(e) {
+        localStorage.setItem("FAQ1Answer", e.target.value)
     }
 
-    decreaseInput(e) {
-        e.preventDefault()
-        if (this.state.inputs.length > 0) {
-            this.state.inputs.pop();
-            this.setState(() => ({ inputs: this.state.inputs }));
-        }
+    handleFaq2(e) {
+        localStorage.setItem("FAQ2", e.target.value)
     }
+    handleFaq2Answer(e) {
+        localStorage.setItem("FAq2Answer", e.target.value)
+    }
+
 
     render() {
         return (
+            <div className='formPageMargin'>
+                <h1 className='formTitle'>Step 4: FAQs</h1>
+                <h2 className='formTitle'>Please add your frequently asked questions for attendees</h2>
 
-            <div className='FaqsFormPage'>
+                <Form className="formPageDashboard">
 
-                <h1>FAQs</h1>
-                <form>
-                    <h2>Please add your frequently asked questions for attendees</h2>
-                    <p className='FaqFieldType'>Question:</p>
-                    <input type='text' id='faqinput'></input>
+                    <Form.Group>
+                        <Form.Label>Question 1</Form.Label >
+                        <Form.Control type="text" placeholder="Question" onChange={this.handleFaq1} />
+                        <Form.Control as="textarea" placeholder="Answer" rows="2" onChange={this.handleFaq1Answer} />
+                    </Form.Group>
 
-                    <p className='FaqFieldType'>Answer:</p>
-                    <textarea type='text' id='faqtextarea'></textarea>
+                    <Form.Group>
+                        <Form.Label>Question 2</Form.Label >
+                        <Form.Control type="text" onChange={this.handleFaq2} placeholder="Question" />
+                        <Form.Control as="textarea" rows="2" onChange={this.handleFaq2Answer} placeholder="Answer" />
+                    </Form.Group>
 
-                    <p className='FaqFieldType'>Question:</p>
-                    <input type='text' id='faqinput' ></input>
 
-                    <p className='FaqFieldType'>Answer:</p>
-                    <textarea type='text' id='faqtextarea'></textarea>
 
-                    {this.state.inputs.map(input => (
-                        <div className='unstyleMe' key={input}>
-                            <p key={input} className='FaqFieldType'>Question:</p>
-                            <input type='text' id='faqinput' ></input>
+                    <Button variant="secondary" size="lg" block>
+                        <a href='/dashboard/123' className="buttonBoxFormButton">
+                        Save and return to dashboard</a>
+                    </Button>
 
-                            <p className='FaqFieldType'>Answer:</p>
-                            <textarea type='text' id='faqtextarea'></textarea>
-                        </div>
-                    ))}
-
-                    <button onClick={(e) => this.appendInput(e)}>
-                        Add more FAQs
-               </button>
-                    <button onClick={(e) => this.decreaseInput(e)}>
-                        Remove FAQ
-               </button>
-                    <p>Select your display image</p>
-                    <div className='slide-photo'>
-                        <div className='img-item'>
-                            <img src={faq1} alt='go' />
-                            <input className='box' type="checkbox" name='festival' value="festival" />
-                        </div>
-                        <div className='img-item'>
-                            <img src={faq2} alt='go' />
-                            <input className='box' type="checkbox" name='concert' value="concert" />
-                        </div>
-                        <div className='img-item'>
-                            <img src={faq3} alt='go' />
-                            <input className='box' type="checkbox" name='music' value="music" />
-                        </div>
-                    </div>
-                    <div className="containerFaq">
-                        <button className="item">Save</button>
-                        <button className="item">Preview</button>
-                        <button className="item">Next</button>
-                    </div>
-                </form>
-
+                    <Button variant="secondary" size="lg" block>
+                        <a href='/contactForm' className="buttonBoxFormButton">Save and continue</a>
+                    </Button>
+                </Form>
             </div>
         );
-
     }
 }

@@ -6,6 +6,7 @@ import chris from './avatars/chris.png';
 import clarissa from './avatars/clarissa.png';
 import mum from './avatars/mum.png';
 import zara from './avatars/zara.png';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export default function CreatedBy() {
 
@@ -26,19 +27,22 @@ export default function CreatedBy() {
                 </div>
                 <br /><br />
                 <h1>Created by:</h1>
-                <div className='creators'>
-                    {creators.map(creator => {
-                        return (
-                            <div className='creator' key={creator.name}>
-                                <a href={creator.url} target="_blank" rel="noopener noreferrer" >
-                                    <img src={creator.avatar} alt={creator.name}
-                                        className='avatar' />
-                                </a>
-                                <p>{creator.name}</p>
-                            </div>
-                        )
-                    })}
-                </div>
+
+                <Container className='creators'>
+                    <Row>
+                        {creators.map(creator => {
+                            return (
+                                <Col key={creator.name}>
+                                    <a href={creator.url} target="_blank" rel="noopener noreferrer" >
+                                        <img src={creator.avatar} alt={creator.name}
+                                            className='avatar' />
+                                    </a>
+                                    <p>{creator.name}</p>
+                                </Col>
+                            )
+                        })}
+                    </Row>
+                </Container>
             </div>
         </>
     )

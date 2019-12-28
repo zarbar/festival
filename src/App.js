@@ -10,11 +10,12 @@ import AboutPage from './Components/AboutPage/AboutPage.js';
 import Dashboard from './Components/Dashboard/Dashboard.js';
 import Navbar from './Components/Navbar/Navbar';
 import PreviewSite from './PreviewSite/PreviewSite';
-
 import DbData from './Components/DbData/DbData';
 import FaqForm from './Components/Forms/FaqForm/FaqForm';
 import TicketInfo from './Components/Forms/TicketInfo/TicketInfo';
 import LocationForm from './Components/Forms/Location/Location';
+import DashNav from './Components/Dashboard/Dashnav/Dashnav';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   render() {
@@ -34,7 +35,7 @@ class App extends Component {
             </Route>
             {/* user dashboard */}
             <Route exact path='/dashboard/:userId'>
-              <Navbar />
+              <DashNav />
               <Dashboard />
             </Route>
             {/* login page/form */}
@@ -48,7 +49,7 @@ class App extends Component {
               <SignUpForm />
             </Route>
             {/* event details form */}
-            <Route exact path='/basicInfo/:userId'>
+            <Route exact path='/basicInfo/'>
               <BasicInfo />
             </Route>
             {/* Location form */}

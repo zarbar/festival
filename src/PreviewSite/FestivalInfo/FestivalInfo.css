@@ -2,11 +2,22 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    border: 5px solid red;
+    border: 5px dotted #0B132B;
+}
+
+.previewsiteblurb {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0.7;
 }
 
 .first-image img {
     width: 100%;
     height: auto;
     padding-bottom: 0;
+}
+
+#mainPreviewTitle {
+    padding: 2%;
+    font-weight: 800;
 }

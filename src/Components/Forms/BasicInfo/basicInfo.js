@@ -1,51 +1,87 @@
-import React, { useState } from 'react';
-import {useParams} from 'react-router-dom';
-import './basicInfo.css';
-import axios from 'axios';
 
-export default function EventDescription() {    
-    let { userId } = useParams();
-    const fakeData = 'this is test data put here by Zara to test backend server - seems to be working which is awesome!';
+import React from 'react';
+// import {useParams} from 'react-router-dom';;
+// import axios from 'axios';
+import { Form, Button } from 'react-bootstrap';
 
-    let [submit, setSubmit] = useState('')
-    function handleSubmit() {
-        setSubmit('Splendid, thank you!');
-        sendDataBackend(fakeData, userId);
+export default function EventDescription() {
+    //DO NOT DELETE - this is for MONGODB
+    //let { userId } = useParams();
+    // const fakeData = 'this is test data put here by Zara to test backend server - seems to be working which is awesome!';
+
+
+    function handleEventName(e) {
+        localStorage.setItem("Event Name", e.target.value);
     }
-
-    let sendDataBackend = (formData, userId) => {
-        let dataToPass = {
-            googleId: userId,
-            festivalData: formData
-        }
-        axios.post('/saveFormData', dataToPass)
-        .then(function (response) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        })
+    function handleStartDate(e) {
+        localStorage.setItem("Start Date", e.target.value)
     }
+    function handleEndDate(e) {
+        localStorage.setItem("End date", e.target.value)
+    }
+    function handleLocation(e) {
+        localStorage.setItem("Location", e.target.value)
+    }
+    function handleBlurb(e) {
+        localStorage.setItem("Blurb", e.target.value)
+    }
+    console.log(localStorage)
 
-    return( 
-        <>
-        <h1>Tell us some more about your event!</h1>
-        <form id="eventDescriptionForm">
-        <label>Festival name</label>
-        <input type='text' placeholder="Enter the details of your event here. Explain what people can expect,
-        and why they should be there"></input>
-        <label>Start Date:</label><input type="date"/>
-        <label>End Date:</label><input type="date"/>
-        <label>Location: </label><input type="string" placeholder="Sofia, Bulgaria"/>
-        <label>Enter a short blurb about your festival: </label>
-        <textarea className="eventDescriptiontextarea" placeholder="Hogsozzle is a perfoming arts and music festival known for its hog rost"></textarea>
-        <div className="containerBasicInfo">
-                <button onClick={handleSubmit} className="item">Save</button>
-                <button onClick={handleSubmit} className="item">Preview</button>
-                <button onClick={handleSubmit} className="item">Next</button>
-            </div>
-            {submit}
-        </form>
-        </>
+    //DO NOT DELETE THIS **ZARA - happy to discuss - this is 
+    // function handleSubmit() {
+    //     sendDataBackend(fakeData, userId);
+    // }
+    // let sendDataBackend = (formData, userId) => {
+    //     let dataToPass = {
+    //         googleId: userId,
+    //         festivalData: formData
+    //     }
+    //     axios.post('/saveFormData', dataToPass)
+    //     .then(function (response) {
+    //         console.log(response);
+    //     })
+    //     .catch(function (error) {
+    //         console.log(error);
+    //     })
+    // }
+
+    return (
+        <div className='formPageMargin'>
+            <h1 className='formTitle'>Step 1: Basic Details </h1>
+            <Form className="formPageDashboard">
+                <Form.Group>
+                    <Form.Label>Festival Name</Form.Label >
+                    <Form.Control type="text" placeholder="festival name" onChange={handleEventName} />
+                </Form.Group>
+
+                <Form.Group>
+                    <Form.Label>Start Date</Form.Label>
+                    <Form.Control type="date" placeholder="Starting Date" onChange={handleStartDate} />
+                </Form.Group>
+
+                <Form.Group>
+                    <Form.Label>End Date</Form.Label>
+                    <Form.Control type="date" placeholder="End Date" onChange={handleEndDate} />
+                </Form.Group>
+
+                <Form.Group>
+                    <Form.Label>General Location</Form.Label>
+                    <Form.Control type="text" placeholder="London, England" onChange={handleLocation} />
+                </Form.Group>
+
+                <Form.Group>
+                    <Form.Label>Festival Description</Form.Label>
+                    <Form.Control as="textarea" rows="5" onChange={handleBlurb} />
+                </Form.Group>
+
+                <Button variant="secondary" size="lg" block>
+                    <a href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
+                </Button>
+
+                <Button variant="secondary" size="lg" block>
+                    <a href='/ticketInfoForm' className="buttonBoxFormButton">Save and continue</a>
+                </Button>
+            </Form>
+        </div>
     )
 }

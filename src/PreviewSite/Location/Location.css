@@ -1,4 +1,4 @@
-.guest-info iframe {
-    width: 100%;
-    height: auto;
+#guest-info {
+    background: #52528C;
+    color: antiquewhite;
 }
