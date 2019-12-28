@@ -23,8 +23,8 @@ class DashNav extends React.Component {
             <>
                 <div className="navbarBody" id={this.state.opacity}>
                     <span className='navbarItem'><a href='/'>Logout</a></span>
-                    <span className='navbarItem'>
-                        <a href='/'><img src={logo} alt='logo' /></a>
+                    <span className='navbarItem2'>
+                        <a href='/'><img src={logo} alt='logo' id='navbarLogo' /></a>
                     </span>
                     <span className='navbarItem'>
                         <button id='burgerButton' onClick={() => this.toggleMenu()}><img id='burger' src={menu} alt='menu' />
