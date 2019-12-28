@@ -38,7 +38,7 @@ export default class FaqBackend extends React.Component {
 
                     <Form.Group>
                         <Form.Label>Question 2</Form.Label >
-                        <Form.Control type="text" placeholder="" onChange={this.handleFaq2} placeholder="Question" />
+                        <Form.Control type="text" onChange={this.handleFaq2} placeholder="Question" />
                         <Form.Control as="textarea" rows="2" onChange={this.handleFaq2Answer} placeholder="Answer" />
                     </Form.Group>
 

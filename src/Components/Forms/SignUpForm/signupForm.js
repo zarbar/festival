@@ -54,7 +54,7 @@ export default function SignUp() {
                             Create Account
                     </Button>
                     </a>
-                    <a className='account-anchor' href="/login" className='logButton'>
+                    <a className='account-anchor logButton' href="/login">
                         <Button variant="warning">
                             Already have an account?
                 </Button>

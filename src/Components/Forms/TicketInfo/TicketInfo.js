@@ -23,13 +23,13 @@ export default function TicketInfo() {
 
         <Form.Group>
           <Form.Label>Enter a link to your ticket provider</Form.Label>
-          <Form.Control type="text" placeholder="London, England" onChange={ticketLink} />
+          <Form.Control type="text" placeholder="https://www.ticketbuyer.co.uk/myFestivalLink" onChange={ticketLink} />
         </Form.Group>
 
 
 
         <Button variant="secondary" size="lg" block>
-          <a className='buttonAnchor' href='/dashboard/123' className="buttonBoxFormButton">Save and return to dashboard</a>
+          <a className='buttonAnchor buttonBoxFormButton' href='/dashboard/123'>Save and return to dashboard</a>
         </Button>
 
         <Button variant="secondary" size="lg" block>

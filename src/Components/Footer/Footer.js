@@ -1,7 +1,5 @@
 import React from 'react';
 import './Footer.css';
-import logo1 from '../../images/Logos/purpleEnglebert.png';
-import { Container, Row, Col } from 'react-bootstrap';
 
 
 export default function Footer() {

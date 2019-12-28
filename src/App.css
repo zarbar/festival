@@ -39,12 +39,8 @@ h1 {
   margin: 1%;
 }
 
-.buttonBoxFormButton {
-  color: white;
-}
-
 .buttonBoxFormButton:hover {
-  color: white;
+  color: antiquewhite;
   text-decoration: none;
 }
 
