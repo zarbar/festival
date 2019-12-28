@@ -27,22 +27,21 @@ export default function CreatedBy() {
                 </div>
                 <br /><br />
                 <h1>Created by:</h1>
+                <br />
 
-                <Container className='creators'>
-                    <Row>
-                        {creators.map(creator => {
-                            return (
-                                <Col key={creator.name}>
-                                    <a href={creator.url} target="_blank" rel="noopener noreferrer" >
-                                        <img src={creator.avatar} alt={creator.name}
-                                            className='avatar' />
-                                    </a>
-                                    <p>{creator.name}</p>
-                                </Col>
-                            )
-                        })}
-                    </Row>
-                </Container>
+                <div className='creatorContainer'>
+                    {creators.map(creator => {
+                        return (
+                            <span key={creator.name} className='creatorIcon'>
+                                <a href={creator.url} target="_blank" rel="noopener noreferrer" >
+                                    <img src={creator.avatar} alt={creator.name}
+                                        className='avatar' />
+                                </a>
+                                <p>{creator.name}</p>
+                            </span>
+                        )
+                    })}
+                </div>
             </div>
         </>
     )
